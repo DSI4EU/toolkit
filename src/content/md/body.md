@@ -30,4 +30,4 @@ other digital social innovators to scale?<br>
 <div class="tilde"></div>
 
 The DSI Toolkit is powered by [DSI4EU](#).<br>
-A project by [NESTA](#), [WAAG](#), [SUPSI](#).
+A project by [NESTA](http://www.nesta.org.uk/), [WAAG](http://waag.org/en), [SUPSI](http://www.supsi.ch/home.html).
