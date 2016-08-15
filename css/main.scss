@@ -15,11 +15,12 @@ $regular-weight: 300;
 $bold-weight: 600;
 
 // sizes
+$h1-size: 48px;
 $p-size: 18px;
 
 // Width of the content area
 
-$content-width:      80%;
+$content-width:      93%;
 $content-max-width:  1200px;
 
 $on-palm:            600px;
@@ -44,5 +45,6 @@ $on-laptop:          800px;
   "base",
   "header",
   "footer",
-  "menu"
+  "menu",
+  "page"
 ;
