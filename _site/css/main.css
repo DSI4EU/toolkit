@@ -1,11 +1,24 @@
+body {
+  background: #F3F3F3;
+  margin: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
 #all {
   width: 80%;
+  min-height: 100vh;
   max-width: 1200px;
   margin: 0 auto; }
+
+.svg {
+  display: none; }
 
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 51px;
   padding: 50px 0 100px 0; }
@@ -13,7 +26,40 @@ header {
     height: 100%; }
     header a img {
       height: 100%; }
+    header a #dark-logo {
+      height: 100%; }
+      header a #dark-logo path {
+        fill: #282930; }
+      header a #dark-logo polygon {
+        fill: #282930; }
   header #menu-icon {
-    width: 50px;
-    height: 50px;
-    background: black; }
+    width: 24px;
+    height: 24px; }
+
+#footer-wave {
+  background: url("../assets/dark-wave.svg");
+  width: 100%;
+  height: 12px; }
+
+footer {
+  background: #282930;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center; }
+  footer > * {
+    width: 100%;
+    margin-bottom: 10px; }
+  footer span {
+    text-align: center;
+    color: #F3F3F3;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px; }
+  footer #license {
+    margin: 10px auto;
+    width: 99px; }
+    footer #license path {
+      fill: #F3F3F3; }

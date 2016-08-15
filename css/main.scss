@@ -11,16 +11,19 @@ $dark-blue: #282930;
 
 //fonts
 $open-sans: 'Open Sans', sans-serif;
-$light-weight: 300;
-$normal-weight: 400;
+$regular-weight: 300;
 $bold-weight: 600;
 
+// sizes
+$p-size: 18px;
+
 // Width of the content area
-$content-width:    800px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$content-width:      80%;
+$content-max-width:  1200px;
 
+$on-palm:            600px;
+$on-laptop:          800px;
 
 
 // Use media queries like this:
@@ -36,9 +39,9 @@ $on-laptop:        800px;
     }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base"      
+  "base",
+  "header",
+  "footer"
 ;

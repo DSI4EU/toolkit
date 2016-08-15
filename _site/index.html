@@ -10,9 +10,9 @@
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="/">  
+  <link rel="canonical" href="/">
 </head>
 
 
@@ -22,24 +22,67 @@
 
       <header>
   <a href="">
-    <img src="/assets/dark-logo.png" alt="dark-logo">
+    <img id="dark-logo" class="svg" src="/assets/darkLogo.svg" alt="dark-logo">
   </a>
   <a href="" id="menu-icon">
-
+    <img id="hamburger" class="svg" src="/assets/hamburger.svg" alt="menu">
   </a>
 </header>
 
 
       <div class="page-content">
-        <div class="wrapper">
-          <p>body of index</p>
-
-        </div>
+        <p>body of index</p>
+        
       </div>
 
-      <footer>
-  <h1>footer</h1>
+      <div id="footer-wave"></div>
+<footer>
+    <span>Powered by DSI4EU</span>
+    <span>with
+      <a href="#">NESTA</a>, <a href="#">WAAG</a>, <a href="#">SUPSI</a>.
+    </span>
+    <a id="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="blank">
+      <img class="svg" src="/assets/license.svg" alt="license">
+    </a>
 </footer>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+//Replace all SVG images with inline SVG
+jQuery('img.svg').each(function(){
+  var $img = jQuery(this);
+  var imgID = $img.attr('id');
+  var imgClass = $img.attr('class');
+  var imgURL = $img.attr('src');
+
+  jQuery.get(imgURL, function(data) {
+      // Get the SVG tag, ignore the rest
+      var $svg = jQuery(data).find('svg');
+
+      // Add replaced image's ID to the new SVG
+      if(typeof imgID !== 'undefined') {
+          $svg = $svg.attr('id', imgID);
+      }
+      // Add replaced image's classes to the new SVG
+      if(typeof imgClass !== 'undefined') {
+          $svg = $svg.attr('class', 'replaced-svg');
+      }
+
+      // Remove any invalid XML tags as per http://validator.w3.org
+      $svg = $svg.removeAttr('xmlns:a');
+
+      // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+      if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+          $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+      }
+
+      // Replace image with new SVG
+      $img.replaceWith($svg);
+
+  }, 'xml');
+
+});
+</script>
 
 
     </div>
