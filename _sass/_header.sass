@@ -19,6 +19,46 @@ header
       polygon
         fill: $dark-blue
 
-  #menu-icon
-    width: 24px
-    height: 24px
+  .hamburger-menu
+    position: relative
+    height: 27px
+    width: 35px
+    cursor: pointer
+    z-index: 100
+    -webkit-transition: opacity .25s ease, width .25s ease
+    transition: opacity .25s ease, width .25s ease
+    .top
+      width: 18px
+    .middle
+      width: 27px
+    &:hover
+      opacity: .7
+    &.active
+      .top
+        -webkit-transform: translateY(11px) translateX(0) rotate(45deg)
+        transform: translateY(11px) translateX(0) rotate(45deg)
+        background: $light-gray
+        width: 35px
+      .middle
+        opacity: 0
+        width: 35px
+        background: $light-gray
+      .bottom
+        -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg)
+        transform: translateY(-11px) translateX(0) rotate(-45deg)
+        background: $light-gray
+    span
+      background: $dark-blue
+      border: none
+      height: 5px
+      width: 100%
+      position: absolute
+      top: 0
+      left: 0
+      -webkit-transition: all .35s ease
+      transition: all .35s ease
+      cursor: pointer
+      &:nth-of-type(2)
+        top: 11px
+      &:nth-of-type(3)
+        top: 22px

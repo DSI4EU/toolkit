@@ -24,10 +24,22 @@
   <a href="">
     <img id="dark-logo" class="svg" src="/assets/darkLogo.svg" alt="dark-logo">
   </a>
-  <a href="" id="menu-icon">
-    <img id="hamburger" class="svg" src="/assets/hamburger.svg" alt="menu">
-  </a>
+  <div class="hamburger-menu" id="toggle">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+  </div>
 </header>
+
+<div class="overlay" id="overlay">
+  <nav class="overlay-menu">
+    <ul>
+      <li ><a href="#">About</a></li>
+      <li><a href="#">DSI Scale</a></li>
+      <li><a href="#">Knowledge</a></li>      
+    </ul>
+  </nav>
+</div>
 
 
       <div class="page-content">
@@ -47,6 +59,12 @@
 </footer>
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <script type="text/javascript">
+
+//hamburger menu
+$('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
 
 //Replace all SVG images with inline SVG
 jQuery('img.svg').each(function(){
@@ -80,7 +98,6 @@ jQuery('img.svg').each(function(){
       $img.replaceWith($svg);
 
   }, 'xml');
-
 });
 </script>
 

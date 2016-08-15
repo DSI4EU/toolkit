@@ -2,7 +2,19 @@
   <a href="{{ site.url }}">
     <img id="dark-logo" class="svg" src="{{ site.url }}/assets/darkLogo.svg" alt="dark-logo">
   </a>
-  <a href="" id="menu-icon">
-    <img id="hamburger" class="svg" src="{{ site.url }}/assets/hamburger.svg" alt="menu">
-  </a>
+  <div class="hamburger-menu" id="toggle">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+  </div>
 </header>
+
+<div class="overlay" id="overlay">
+  <nav class="overlay-menu">
+    <ul>
+      <li ><a href="#">About</a></li>
+      <li><a href="#">DSI Scale</a></li>
+      <li><a href="#">Knowledge</a></li>      
+    </ul>
+  </nav>
+</div>
