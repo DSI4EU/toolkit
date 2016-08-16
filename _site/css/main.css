@@ -15,6 +15,24 @@ h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300; }
 
+h2 {
+  font-size: 28px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 31px; }
+
+p {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+  p a {
+    border-bottom: 2px solid; }
+
+.small {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+
 .subtitle {
   font-size: 20px;
   line-height: 35px;
@@ -38,6 +56,21 @@ button {
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 20px; }
+
+.light {
+  opacity: 0.45; }
+
+.long {
+  line-height: 31px; }
+
+.centered-text {
+  text-align: center; }
+
+.big-line-divider {
+  width: 50px;
+  height: 2px;
+  background: #282930;
+  margin: 45px auto; }
 
 .svg {
   display: none; }
@@ -223,6 +256,42 @@ footer {
   .hero .subhero {
     width: 66%;
     margin: 0 auto 30px auto;
-    color: #565968; }
+    color: #6e7083; }
   .hero img {
     width: 90px; }
+
+.centered-text .light {
+  margin-top: -16px; }
+
+.block {
+  margin: 45px 0; }
+
+.tags {
+  color: #1DC9A0;
+  display: flex;
+  width: 25%;
+  margin: 45px auto;
+  justify-content: space-between;
+  font-weight: 600; }
+
+.quotes {
+  width: 100%;
+  margin: 45px auto;
+  column-count: 2;
+  column-gap: 20px; }
+  .quotes .quote {
+    width: 100%;
+    margin-bottom: 10px;
+    background: #282930;
+    text-align: center;
+    border-radius: 3px;
+    padding: 10px; }
+    .quotes .quote p {
+      color: white; }
+    .quotes .quote .epithet {
+      margin-top: -8px; }
+    .quotes .quote .line-divider {
+      height: 1px;
+      width: 26px;
+      margin: 0 auto;
+      background: white; }

@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="hero">
+  <img src= "{{ page.imageURL }}" alt="">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <div class="subtitle subhero">{{ page.subtitle }}</div>
+  {% if page.button %}
+    <button>{{ page.button }}</button>
+  {% endif %}
+</div>
+
+<div class="big-line-divider"></div>
+
+<div class="centered-text block">
+  <h2>{{ page.h2 }}</h2>
+  <p class="light">
+    <a href="http://google.com">{{ page.submissions-link-text }}</a>
+  </p>
+</div>
+
+<p class="centered-text tags">
+  {% for tag in page.tags %}
+    <a href="#">#{{ tag }}</a>
+  {% endfor %}
+</p>
+
+{% include quotes.html %}
+
+<div class="block centered-text">
+  <button>{{ page.bottom-button }}</button>
+</div>

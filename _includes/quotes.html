@@ -1,0 +1,10 @@
+<div class="quotes">
+  {% for quote in site.quotes %}
+    <div class="quote">
+      <p class="long">"{{ quote.text }}"</p>
+      <div class="line-divider"></div>
+      <p>{{ quote.name }}</p>
+      <p class="epithet small light">{{ quote.epithet }}</p>
+    </div>
+  {% endfor %}
+</div>
