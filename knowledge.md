@@ -12,4 +12,17 @@ tags:
   - two
   - three
 bottom-button: Share what you've learned
+quotes:
+  - text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium.
+    name:  Gimli
+    epithet: Son of Gloin
+  - text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+    name:  Gimli
+    epithet: Son of Gloin
+  - text: Lorem ipsum dolor sit amet, consectetuer adipiscing
+    name:  Gimli
+    epithet: Son of Gloin
+  - text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium.
+    name:  Gimli
+    epithet: Son of Gloin
 ---

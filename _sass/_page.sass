@@ -8,7 +8,7 @@
   img
     width: 90px
 
-.centered-text  
+.centered-text
   .light
     margin-top: -16px
 
@@ -27,20 +27,23 @@
   width: 100%
   margin: $block-spacer auto
   column-count: 2
-  column-gap: 20px
-  .quote
-    width: 100%
-    margin-bottom: 10px
-    background: $dark-blue
-    text-align: center
-    border-radius: 3px
-    padding: 10px
-    p
-      color: white
-    .epithet
-      margin-top: -8px
-    .line-divider
-      height: 1px
-      width: 26px
-      margin: 0 auto
-      background: white
+  column-gap: 10px
+  .container
+    padding-bottom: 10px
+    .quote
+      background: $dark-blue
+      text-align: center
+      border-radius: 3px
+      padding: 10px
+      -webkit-column-break-inside: avoid
+      page-break-inside: avoid
+      break-inside: avoid
+      p
+        color: white
+      .epithet
+        margin-top: -8px
+      .line-divider
+        height: 1px
+        width: 26px
+        margin: 0 auto
+        background: white

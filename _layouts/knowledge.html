@@ -26,7 +26,20 @@ layout: default
   {% endfor %}
 </p>
 
-{% include quotes.html %}
+<!-- {% include quotes.html %} -->
+
+<div class="quotes">
+  {% for quote in page.quotes %}
+    <div class="container">
+      <div class="quote">
+        <p class="long">"{{ quote.text }}"</p>
+        <div class="line-divider"></div>
+        <p>{{ quote.name }}</p>
+        <p class="epithet small light">{{ quote.epithet }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
 
 <div class="block centered-text">
   <button>{{ page.bottom-button }}</button>
