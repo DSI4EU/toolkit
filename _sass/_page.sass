@@ -1,16 +1,16 @@
 .hero
   width: 100%
-  text-align: center
   .subhero
     width: 66%
-    margin: 0 auto 30px auto
-    color: lighten($dark-blue, 30%)
+    color: $dark-gray
   img
     width: 90px
 
 .centered-text
   .light
     margin-top: -16px
+  .subhero
+    margin: 0 auto 30px auto
 
 .block
   margin: $block-spacer 0
@@ -47,3 +47,28 @@
         width: 26px
         margin: 0 auto
         background: white
+.questions
+  width: 66%
+  padding-top: 40px
+  .active
+    opacity: 1 !important
+    transform: scale(1) !important
+  .question
+    margin-bottom: 100px
+    &:last-child
+      margin-bottom: 20px
+    transition: opacity .25s ease, transform .25 ease
+    opacity: 0.4
+    transform: scale(0.995)
+    .description
+      color: $dark-gray
+      margin-top: -10px
+    textarea
+      height: 40px
+      // transition: height .5s !important
+      width: 100%
+      outline: none
+      color: $dark-blue
+      background: transparent
+      border: 0
+      border-bottom: 3px solid $dark-blue

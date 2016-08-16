@@ -42,6 +42,7 @@ p
 
 button
   background: transparent
+  cursor: crosshair
   color: $teal
   border: 2px solid $teal
   border-radius: 25px
@@ -51,6 +52,9 @@ button
   font-size: 18px
   font-family: $open-sans
   font-weight: $bold-weight
+  transition: padding 30s ease
+  &:hover
+    padding: 5px 300px
 
 #all
   width: $content-width
@@ -72,6 +76,12 @@ button
   height: 2px
   background: $dark_blue
   margin: $block-spacer auto
+
+.left-line-divider
+  width: 50px
+  height: 2px
+  background: $dark_blue
+  margin: $block-spacer 0
 
 // pace line loader
 .pace

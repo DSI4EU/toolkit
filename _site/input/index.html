@@ -38,7 +38,49 @@
 </div>
 
       <div class="page-content">
-        
+        <div class="hero">
+  <h1 class="post-title">Share your knowledge.</h1>
+  <p class="subtitle subhero">You learned some lessons while implementing your digital social innovation project. This is the space where you can share your knowledge and access the experiences of other innovators like you. Why? Because we can learn together how to reach a better impact.</p>
+</div>
+
+<div class="left-line-divider"></div>
+
+<div class="questions">
+  
+    <div class="question active">
+      <h2>1. What’s your project about?</h2>
+      
+      <textarea onkeyup="auto_grow(this)" class="subtitle" type="text" placeholder="I make solar panels"></textarea>
+    </div>
+  
+    <div class="question ">
+      <h2>2. Something went or is going well in you project.</h2>
+      
+        <p class="long description">For sure you are doing it right and positive external factors are also influencing the process... tell everyone what part of your project is working good.</p>
+      
+      <textarea onkeyup="auto_grow(this)" class="subtitle" type="text" placeholder="My community is very involved"></textarea>
+    </div>
+  
+    <div class="question ">
+      <h2>4. Problem solving tactics are fundamental to scale.</h2>
+      
+        <p class="long description">A lot of projects face problems in their path towards the sustainability. You'd likely experienced problems during implementation. How did you solve them?</p>
+      
+      <textarea onkeyup="auto_grow(this)" class="subtitle" type="text" placeholder="The roles were starting to overlap so we split in horizontal specialized groups"></textarea>
+    </div>
+  
+    <div class="question ">
+      <h2>5. Share a representative picture of your project.</h2>
+      
+        <p class="long description">Put the link here and use CC BY-NC-SA license.</p>
+      
+      <textarea onkeyup="auto_grow(this)" class="subtitle" type="text" placeholder="http://image.com/img.jpg"></textarea>
+    </div>
+  
+</div>
+
+<button class="block">Send →</button>
+
       </div>
     </div>
     <footer>
@@ -94,6 +136,33 @@ jQuery('img.svg').each(function(){
 
   }, 'xml');
 });
+
+//autogrow input
+function auto_grow(element) {
+    element.style.height = "5px";
+    element.style.height = (element.scrollHeight)+"px";
+}
+
+//QUESTIONS FOCUS
+//keyboard focus
+$("textarea").focus(function() {
+  $(this).parent().addClass("active")
+  //smooth scroll
+  $('html, body').animate({
+        scrollTop: $(this).parent().offset().top - 100
+    }, 400);
+})
+//keyboard focusout
+$("textarea").focusout(function() {
+  $(this).parent().removeClass("active")
+})
+//mouseclick
+$(".question").click(function(){
+  $(".active").removeClass("active")
+  $(this).addClass("active")
+  $(this).find("textarea").focus()
+})
+
 </script>
 
   </body>

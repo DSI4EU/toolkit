@@ -1,3 +1,24 @@
 ---
 layout: default
 ---
+
+<div class="hero">
+  <h1 class="post-title">{{ page.h1 }}</h1>
+  <p class="subtitle subhero">{{ page.subtitle }}</p>
+</div>
+
+<div class="left-line-divider"></div>
+
+<div class="questions">
+  {% for question in page.questions %}
+    <div class="question {% if forloop.first %}active{% endif %}">
+      <h2>{{ question.text }}</h2>
+      {% if question.description %}
+        <p class="long description">{{ question.description }}</p>
+      {% endif %}
+      <textarea onkeyup="auto_grow(this)" class="subtitle" type="text" placeholder="{{ question.placeholder }}"></textarea>
+    </div>
+  {% endfor %}
+</div>
+
+<button class="block">Send →</button>

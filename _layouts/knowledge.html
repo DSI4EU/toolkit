@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="hero">
+<div class="hero centered-text">
   <img src= "{{ page.imageURL }}" alt="">
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="subtitle subhero">{{ page.subtitle }}</div>
@@ -26,8 +26,6 @@ layout: default
   {% endfor %}
 </p>
 
-<!-- {% include quotes.html %} -->
-
 <div class="quotes">
   {% for quote in page.quotes %}
     <div class="container">
@@ -42,5 +40,7 @@ layout: default
 </div>
 
 <div class="block centered-text">
-  <button>{{ page.bottom-button }}</button>
+  <a href="{{site.url}}/input">
+    <button>{{ page.bottom-button }}</button>
+  </a>
 </div>
