@@ -42,7 +42,7 @@ p
 
 button
   background: transparent
-  cursor: crosshair
+  cursor: pointer
   color: $teal
   border: 2px solid $teal
   border-radius: 25px
@@ -52,18 +52,20 @@ button
   font-size: 18px
   font-family: $open-sans
   font-weight: $bold-weight
-  transition: padding 30s ease
+  transition: padding .5s ease
   &:hover
-    padding: 5px 300px
+    padding: 5px 30px
 
 #all
   width: $content-width
   max-width: $content-max-width
   margin: 0 auto
   padding-bottom: 20px
+  //220px is the footer height
+  min-height: calc(100vh - 220px)
 
 .light
-  opacity: 0.45
+  color: $dark-gray
 
 .long
   line-height: 31px

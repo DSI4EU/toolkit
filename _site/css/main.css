@@ -41,7 +41,7 @@ p {
 
 button {
   background: transparent;
-  cursor: crosshair;
+  cursor: pointer;
   color: #1DC9A0;
   border: 2px solid #1DC9A0;
   border-radius: 25px;
@@ -51,18 +51,19 @@ button {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  transition: padding 30s ease; }
+  transition: padding 0.5s ease; }
   button:hover {
-    padding: 5px 300px; }
+    padding: 5px 30px; }
 
 #all {
   width: 93%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  min-height: calc(100vh - 220px); }
 
 .light {
-  opacity: 0.45; }
+  color: #797979; }
 
 .long {
   line-height: 31px; }
@@ -203,6 +204,7 @@ footer {
   height: 0%;
   opacity: 0;
   visibility: hidden;
+  z-index: 2;
   -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
   transition: opacity 0.35s, visibility 0.35s, height 0.35s;
   overflow: hidden; }
