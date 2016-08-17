@@ -7,7 +7,8 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 h1 {
   font-size: 48px;
@@ -27,6 +28,23 @@ p {
   font-weight: 300; }
   p a {
     border-bottom: 2px solid; }
+
+ol {
+  padding-left: 1em;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+
+textarea {
+  resize: none;
+  overflow: hidden;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  color: #282930;
+  background: transparent;
+  border: 0;
+  border-bottom: 3px solid #282930; }
 
 .small {
   font-size: 15px;
@@ -287,7 +305,7 @@ footer {
     width: 66%;
     color: #797979; }
   .hero img {
-    width: 90px; }
+    height: 50px; }
 
 .centered-text .light {
   margin-top: -16px; }
@@ -296,6 +314,9 @@ footer {
 
 .block {
   margin: 45px 0; }
+
+.small-block {
+  margin: 31.5px 0; }
 
 .tags {
   color: #1DC9A0;
@@ -314,28 +335,47 @@ footer {
     padding-bottom: 10px; }
     .quotes .container .quote {
       background: #282930;
-      text-align: center;
       border-radius: 3px;
-      padding: 10px;
+      padding: 10px 27px;
       -webkit-column-break-inside: avoid;
       page-break-inside: avoid;
-      break-inside: avoid; }
-      .quotes .container .quote p {
-        color: white; }
+      break-inside: avoid;
+      transition: height 0.5s ease; }
+      .quotes .container .quote p, .quotes .container .quote h2, .quotes .container .quote span, .quotes .container .quote textarea {
+        color: #F3F3F3; }
       .quotes .container .quote .epithet {
         margin-top: -8px; }
       .quotes .container .quote .line-divider {
         height: 1px;
         width: 26px;
         margin: 0 auto;
-        background: white; }
+        background: #F3F3F3; }
+      .quotes .container .quote .indicator {
+        display: flex;
+        opacity: 0.4;
+        transform: scale(0.99);
+        margin-bottom: 30px;
+        transition: opacity 0.25s ease, transform 0.25s ease; }
+        .quotes .container .quote .indicator:first-of-type {
+          margin-top: 40px; }
+        .quotes .container .quote .indicator textarea {
+          height: 1.5em;
+          font-size: 18px;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 300;
+          border-bottom: 2px solid #F3F3F3;
+          margin-left: 7px;
+          line-height: 28px; }
+        .quotes .container .quote .indicator p {
+          margin-top: 5px; }
+      .quotes .container .quote button {
+        margin: 10px 0 30px 0;
+        border-color: #F3F3F3;
+        color: #F3F3F3; }
 
 .questions {
   width: 66%;
-  padding-top: 40px; }
-  .questions .active {
-    opacity: 1 !important;
-    transform: scale(1) !important; }
+  padding-top: 60px; }
   .questions .question {
     margin-bottom: 100px;
     transition: opacity 0.25s ease, transform 0.25 ease;
@@ -346,11 +386,13 @@ footer {
     .questions .question .description {
       color: #797979;
       margin-top: -10px; }
-    .questions .question textarea {
-      height: 40px;
-      width: 100%;
-      outline: none;
-      color: #282930;
-      background: transparent;
-      border: 0;
-      border-bottom: 3px solid #282930; }
+
+.active {
+  opacity: 1 !important;
+  transform: scale(1) !important; }
+
+.scale-content {
+  width: 66%; }
+  .scale-content p, .scale-content ol {
+    line-height: 31px;
+    color: #797979; }

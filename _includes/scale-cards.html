@@ -1,0 +1,24 @@
+<div class="quotes">
+  {% for card in site.scale-cards %}
+    <div class="container">
+      <div class="quote">
+        <h2>{{ card.title }}</h2>
+        <p class="long small-block">{{ card.description }}</p>
+        <p>
+          <a class="define-link">Define this indicator</a>
+        </p>
+        <div class="indicator-input">
+          {% for value in card.indicators %}
+            <div class="indicator {% if forloop.first %}active{% endif %}">
+              <p>
+                {{forloop.index}}:
+              </p>
+              <textarea onkeyup="auto_grow(this)" placeholder="{{ value }}"></textarea>
+            </div>
+          {% endfor %}
+          <button class="indicator-send">Send →</button>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

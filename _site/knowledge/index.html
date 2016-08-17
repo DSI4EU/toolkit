@@ -31,7 +31,7 @@
   <nav class="overlay-menu">
     <ul>
       <li ><a href="#">About</a></li>
-      <li><a href="#">DSI Scale</a></li>
+      <li><a href="/scale">DSI Scale</a></li>
       <li><a href="/input">Knowledge</a></li>
     </ul>
   </nav>
@@ -71,7 +71,7 @@
 <div class="quotes">
   
     <div class="container">
-      <div class="quote">
+      <div class="quote centered-text">
         <p class="long">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium."</p>
         <div class="line-divider"></div>
         <p>Gimli</p>
@@ -80,7 +80,7 @@
     </div>
   
     <div class="container">
-      <div class="quote">
+      <div class="quote centered-text">
         <p class="long">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes"</p>
         <div class="line-divider"></div>
         <p>Gimli</p>
@@ -89,7 +89,7 @@
     </div>
   
     <div class="container">
-      <div class="quote">
+      <div class="quote centered-text">
         <p class="long">"Lorem ipsum dolor sit amet, consectetuer adipiscing"</p>
         <div class="line-divider"></div>
         <p>Gimli</p>
@@ -98,7 +98,7 @@
     </div>
   
     <div class="container">
-      <div class="quote">
+      <div class="quote centered-text">
         <p class="long">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium."</p>
         <div class="line-divider"></div>
         <p>Gimli</p>
@@ -178,24 +178,41 @@ function auto_grow(element) {
     element.style.height = (element.scrollHeight)+"px";
 }
 
-//QUESTIONS FOCUS
+/* QUESTIONS FOCUS */
+
 //keyboard focus
 $("textarea").focus(function() {
+  $("body").find(".active").removeClass("active")
   $(this).parent().addClass("active")
-  //smooth scroll
+})
+
+//smooth scroll
+$(".question textarea").focus(function() {
   $('html, body').animate({
         scrollTop: $(this).parent().offset().top - 100
     }, 400);
 })
+
 //keyboard focusout
 $("textarea").focusout(function() {
   $(this).parent().removeClass("active")
 })
+
 //mouseclick
 $(".question").click(function(){
   $(".active").removeClass("active")
   $(this).addClass("active")
   $(this).find("textarea").focus()
+})
+
+$(".indicator-input").hide()
+$(".define-link").click(function() {
+  $(this).parent().parent().find(".indicator-input").fadeIn()
+  $(this).hide()
+})
+
+$(".indicator-send").click(function(){  
+  $(this).parent().parent().fadeOut()
 })
 
 </script>

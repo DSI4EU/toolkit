@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="hero centered-text">
+  <img src= "{{ page.imageURL }}" alt="">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <div class="subtitle subhero">{{ page.subtitle }}</div>
+</div>
+<div class="big-line-divider"></div>
+
+<div class="scale-content">
+  {{ content }}
+  <h2>{{ page.h2 }}</h2>
+</div>
+
+<div class="quotes">
+  <textarea class="subtitle nameinput" type="text" placeholder="Name (optional)"></textarea>
+</div>
+
+{% include scale-cards.html %}
