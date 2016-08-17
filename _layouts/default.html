@@ -8,7 +8,7 @@
         {{ content }}
         <!-- dirty fix because buttons get wrapped in a <p> -->
         {% if page.thanks-button %}
-          <a href="/">
+          <a href="{{ site.baseurl }}">
             <button>{{ page.thanks-button }}</button>
           </a>
         {% endif %}
