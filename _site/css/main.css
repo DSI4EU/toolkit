@@ -57,6 +57,9 @@ textarea {
   font-family: "Open Sans", sans-serif;
   font-weight: 300; }
 
+.fade {
+  opacity: 0.1 !important; }
+
 button {
   background: transparent;
   cursor: pointer;
@@ -64,7 +67,7 @@ button {
   border: 2px solid #1DC9A0;
   border-radius: 25px;
   height: 40px;
-  padding: 5px 22px;
+  padding: 5px 27px;
   outline: none;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
@@ -82,6 +85,12 @@ button {
 
 .light {
   color: #797979; }
+
+.dark {
+  background: #282930; }
+
+.light-gray {
+  background-color: #F3F3F3; }
 
 .long {
   line-height: 31px; }
@@ -123,29 +132,74 @@ button {
 .svg {
   display: none; }
 
+.gradient-hero {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 90vh;
+  background-image: linear-gradient(-134deg, #7421D6 0%, #26C6A3 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #F3F3F3 !important; }
+  .gradient-hero .subtitle {
+    width: 66%;
+    margin: 0 auto;
+    opacity: 0.7; }
+  .gradient-hero button {
+    color: #F3F3F3;
+    border-color: #F3F3F3;
+    margin-top: 45px; }
+
+.high-margin {
+  margin-top: 75vh; }
+
+.double-column {
+  display: flex;
+  justify-content: space-around; }
+  .double-column section {
+    text-align: center;
+    width: 35%; }
+    .double-column section p {
+      margin: 25px 0;
+      line-height: 31px;
+      color: #797979; }
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
   height: 51px;
-  padding: 50px 0 55px 0; }
+  padding: 50px 0 55px 0;
+  z-index: 2;
+  position: relative; }
   header a {
     height: 100%; }
     header a img {
       height: 100%; }
     header a #dark-logo {
-      height: 100%; }
+      height: 100%;
+      opacity: 1;
+      transition: opacity 0.2s ease; }
       header a #dark-logo path {
         fill: #282930; }
       header a #dark-logo polygon {
         fill: #282930; }
+    header a #light-logo {
+      height: 100%;
+      opacity: 1;
+      transition: opacity 0.2s ease; }
+      header a #light-logo path {
+        fill: #F3F3F3; }
+      header a #light-logo polygon {
+        fill: #F3F3F3; }
   header .hamburger-menu {
     position: relative;
     height: 24px;
     width: 29px;
     cursor: pointer;
-    z-index: 100;
     -webkit-transition: opacity 0.25s ease, width 0.25s ease;
     transition: opacity 0.25s ease, width 0.25s ease; }
     header .hamburger-menu .top {
@@ -158,17 +212,20 @@ header {
       -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
       transform: translateY(10px) translateX(0) rotate(45deg);
       background: #F3F3F3;
-      width: 29px; }
+      width: 29px;
+      z-index: 4; }
     header .hamburger-menu.active .middle {
       opacity: 0;
       width: 29px;
-      background: #F3F3F3; }
+      background: #F3F3F3;
+      z-index: 4; }
     header .hamburger-menu.active .bottom {
       -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
       transform: translateY(-10px) translateX(0) rotate(-45deg);
-      background: #F3F3F3; }
+      background: #F3F3F3;
+      z-index: 4; }
     header .hamburger-menu span {
-      background: #282930;
+      z-index: 2;
       border: none;
       height: 4px;
       width: 100%;
@@ -222,7 +279,7 @@ footer {
   height: 0%;
   opacity: 0;
   visibility: hidden;
-  z-index: 2;
+  z-index: 1;
   -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
   transition: opacity 0.35s, visibility 0.35s, height 0.35s;
   overflow: hidden; }

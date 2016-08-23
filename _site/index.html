@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>DSI Toolkit</title>
+  <title>DSI Toolkito</title>
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
@@ -17,13 +17,13 @@
   <body>
     <div id="all">
       <header>
-  <a href="/">
-    <img id="dark-logo" class="svg" src="/assets/darkLogo.svg" alt="dark-logo">
+  <a href="">
+    <img id="light-logo" class="svg" src="/assets/darkLogo.svg" alt="light-logo">
   </a>
   <div class="hamburger-menu" id="toggle">
-    <span class="top"></span>
-    <span class="middle"></span>
-    <span class="bottom"></span>
+    <span class="light-gray top"></span>
+    <span class="light-gray middle"></span>
+    <span class="light-gray bottom"></span>
   </div>
 </header>
 
@@ -32,18 +32,44 @@
     <ul>
       <li ><a href="#">About</a></li>
       <li><a href="/scale">DSI Scale</a></li>
-      <li><a href="/input">Knowledge</a></li>
+      <li><a href="/knowledge">Knowledge</a></li>
     </ul>
   </nav>
 </div>
 
-      <div class="page-content">
+        <div class="hero centered-text gradient-hero">
+          <div class="content">
+            <h1 class="post-title">Digital social innovation <br> &#35;toolkit</h1>
+            <div class="subtitle ">The DSI Toolkit is a collaboratively developed toolkit that helps projects to scale in a sustainable way, generating a better impact.</div>
+            <button>Explore the toolkit</button>
+          </div>
+        </div>
+        <div class="page-content">
+        <div class="high-margin double-column">
+          <section>
+            <h2>The DSI scale</h2>
+            <p>
+              Helps to assess the DSI growth considering sharing, openness and societal good.
+            </p>
+            <button>
+              Build the DSI scale
+            </button>
+          </section>
+          <section>
+            <h2>Peer knowledge</h2>
+            <p>
+              Wanna help other digital social innovators to scale? Share your knowledge!
+            </p>
+            <button>
+              Contribute
+            </button>
+          </section>
+        </div>
         
-        <!-- dirty fix because buttons get wrapped in a <p> -->
-        
+
       </div>
     </div>
-    <footer>
+    <!-- <footer>
     <div id="footer-wave"></div>
     <span>Powered by DSI4EU</span>
     <span>with
@@ -61,6 +87,8 @@
 $('#toggle').click(function() {
    $(this).toggleClass('active');
    $('#overlay').toggleClass('open');
+   $('#light-logo').toggleClass('fade');
+   $('#dark-logo').toggleClass('fade');
   });
 
 //Replace all SVG images with inline SVG
@@ -136,11 +164,11 @@ $(".define-link").click(function() {
   $(this).hide()
 })
 
-$(".indicator-send").click(function(){  
+$(".indicator-send").click(function(){
   $(this).parent().parent().fadeOut()
 })
 
 </script>
-
+ -->
   </body>
 </html>

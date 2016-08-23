@@ -17,13 +17,13 @@
   <body>
     <div id="all">
       <header>
-  <a href="/">
+  <a href="">
     <img id="dark-logo" class="svg" src="/assets/darkLogo.svg" alt="dark-logo">
   </a>
   <div class="hamburger-menu" id="toggle">
-    <span class="top"></span>
-    <span class="middle"></span>
-    <span class="bottom"></span>
+    <span class="dark top"></span>
+    <span class="dark middle"></span>
+    <span class="dark bottom"></span>
   </div>
 </header>
 
@@ -32,7 +32,7 @@
     <ul>
       <li ><a href="#">About</a></li>
       <li><a href="/scale">DSI Scale</a></li>
-      <li><a href="/input">Knowledge</a></li>
+      <li><a href="/knowledge">Knowledge</a></li>
     </ul>
   </nav>
 </div>
@@ -136,6 +136,8 @@
 $('#toggle').click(function() {
    $(this).toggleClass('active');
    $('#overlay').toggleClass('open');
+   $('#light-logo').toggleClass('fade');
+   $('#dark-logo').toggleClass('fade');
   });
 
 //Replace all SVG images with inline SVG
@@ -211,7 +213,7 @@ $(".define-link").click(function() {
   $(this).hide()
 })
 
-$(".indicator-send").click(function(){  
+$(".indicator-send").click(function(){
   $(this).parent().parent().fadeOut()
 })
 
