@@ -1,40 +1,59 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
-  <body>
-    <div id="all">
-      {% include light-header.html %}
-        <div class="hero centered-text gradient-hero">
-          <div class="content">
-            <h1 class="post-title">{{ page.hero }}</h1>
-            <div class="subtitle ">{{ page.subtitle }}</div>
-            <button>Explore the toolkit</button>
-          </div>
-        </div>
-        <div class="page-content">
-        <div class="high-margin double-column">
-          <section>
-            <h2>The DSI scale</h2>
-            <p>
-              Helps to assess the DSI growth considering sharing, openness and societal good.
-            </p>
-            <button>
-              Build the DSI scale
-            </button>
-          </section>
-          <section>
-            <h2>Peer knowledge</h2>
-            <p>
-              Wanna help other digital social innovators to scale? Share your knowledge!
-            </p>
-            <button>
-              Contribute
-            </button>
-          </section>
-        </div>
-        {{ content }}
+{% include head.html %}
+<body>
+  <div id="all">
+    {% include light-header.html %}
+    <div class="hero centered-text gradient-hero">
+      <div class="content">
+        <h1 class="post-title">{{ page.hero }}</h1>
+        <div class="subtitle ">{{ page.subtitle }}</div>
+        <a href="#page-content">
+          <button>{{ page.hero-button }}</button>
+        </a>
       </div>
     </div>
-    <!-- {% include footer.html %} -->
-  </body>
+    <div id="page-content">
+      <div class="high-margin double-column">
+        <section>
+          <img class="svg" src="{{ page.left-image }}" alt="dsi scale">
+          <h2>{{ page.left-title }}</h2>
+          <p class="light">{{ page.left-p }}</p>
+          <button>{{ page.left-button }}</button>
+        </section>
+        <section>
+          <img class="svg" src="{{ page.right-image }}" alt="peer knowledge">
+          <h2>{{ page.right-title }}</h2>
+          <p class="light">{{ page.right-p }}</p>
+          <button>{{ page.right-button }}</button>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="hero big-picture centered-text">
+    <div class="content">
+      <h1 class="post-title">{{ page.picture-title }}</h1>
+      <div class="subtitle ">{{ page.picture-subtitle }}</div>
+    </div>
+    <div class="double-column">
+      <section>
+        <p>
+          <strong>{{ page.left-ws }}</strong><br>
+          <a href="{{ page.left-link }}">{{ page.left-link-text }}</a><br>
+          {{ page.left-desc }}
+        </p>
+      </section>
+      <section>
+        <p>
+          <strong>{{ page.right-ws }}</strong><br>
+          <a href="{{ page.right-link }}">{{ page.right-link-text }}</a><br>
+          {{ page.right-desc }}
+        </p>
+      </section>
+    </div>
+  </div>
+  <div class="light-footer">
+    {% include footer.html %}
+  </div>
+</body>
 </html>
