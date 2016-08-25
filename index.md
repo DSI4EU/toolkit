@@ -1,6 +1,6 @@
 ---
 layout: index
-title: DSI Toolkito
+title: DSI Toolkit
 
 # HERO #
 hero: Digital social innovation <br> &#35;toolkit
@@ -9,12 +9,12 @@ hero-button: Explore the toolkit
 
 # COLUMNS #
 # L #
-left-image: "{{ site.baseurl }}/assets/scale.svg"
+left-image: "../assets/scale.svg"
 left-title: The DSI scale
 left-p: Helps to assess the DSI growth considering sharing, openness and societal good.
 left-button: Build the DSI scale
 # R #
-right-image: "{{ site.baseurl }}/assets/peer.svg"
+right-image: "../assets/peer.svg"
 right-title: Peer knowledge
 right-p: Wanna help other digital social innovators to scale? Share your knowledge!
 right-button: Contribute
