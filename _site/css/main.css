@@ -81,6 +81,17 @@ button {
   button:hover {
     padding: 5px 30px; }
 
+.dark-button {
+  border-color: #282930;
+  color: #282930;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 5px 15px; }
+  .dark-button img {
+    width: 24px;
+    margin-right: 10px; }
+
 #all {
   width: 93%;
   max-width: 1200px;
@@ -107,13 +118,16 @@ button {
   width: 50px;
   height: 2px;
   background: #282930;
-  margin: 45px auto; }
+  margin: 50px auto; }
 
 .left-line-divider {
   width: 50px;
   height: 2px;
   background: #282930;
-  margin: 45px 0; }
+  margin: 50px 0; }
+
+.big-spacer {
+  margin: 150px 0; }
 
 .pace {
   -webkit-pointer-events: none;
@@ -155,7 +169,7 @@ button {
   .gradient-hero button {
     color: #F3F3F3;
     border-color: #F3F3F3;
-    margin-top: 45px; }
+    margin-top: 50px; }
 
 .high-margin {
   margin-top: 82vh;
@@ -415,7 +429,7 @@ footer {
   .hero .subhero {
     width: 66%;
     color: #797979; }
-  .hero img {
+  .hero svg {
     height: 50px; }
 
 .centered-text .light {
@@ -424,22 +438,22 @@ footer {
   margin: 0 auto 30px auto; }
 
 .block {
-  margin: 45px 0; }
+  margin: 50px 0; }
 
 .small-block {
-  margin: 31.5px 0; }
+  margin: 35px 0; }
 
 .tags {
   color: #1DC9A0;
   display: flex;
   width: 25%;
-  margin: 45px auto;
+  margin: 50px auto;
   justify-content: space-between;
   font-weight: 600; }
 
 .quotes {
   width: 100%;
-  margin: 45px auto;
+  margin: 50px auto;
   column-count: 2;
   column-gap: 10px; }
   .quotes .container {
