@@ -23,25 +23,63 @@ $small-size: 15px;
 $block-spacer: 50px;
 
 // Width of the content area
-
 $content-width:      93%;
 $content-max-width:  1200px;
 
-$on-palm:            600px;
-$on-laptop:          800px;
+// media queries
+$mobile-width:            600px;
 
+@mixin mobile {
+  @media screen and (max-width: $mobile-width) {
+    @content;
+  }
+}
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
+@mixin desktop {
+  @media screen and (min-width: $mobile-width + 1) {
+    @content;
+  }
+}
+
+@include mobile {
+  header {
+    padding: 23px 0 28px 0;
+    width: 97%;
+  }
+  .hero {
+    .subhero {
+      width: 100% !important;
     }
+  }
+  .subtitle {
+    font-size: 18px;
+    line-height: 31px;
+  }
+  .big-spacer {
+    margin: $block-spacer*1.5 0;
+  }
+  .gradient-hero {
+    padding-top: 90px;
+  }
+}
+
+@include desktop {
+  header {
+    padding: 50px 0 55px 0;
+    width: 100%;
+  }
+  .hero {
+    .subhero {
+      width: 66%;
+    }
+  }
+  .subtitle {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .big-spacer {
+    margin: $block-spacer*3 0;
+  }
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
