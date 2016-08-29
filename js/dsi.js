@@ -105,8 +105,24 @@ function gradientMargins() {
 if ($("#gradient-hero").outerHeight() > (window.innerHeight * 0.9)) {
   $("#gradient-hero").addClass("slim-screen-hero")
 }
-
 gradientMargins()
+
+//interactive gradient
+$(document).mousemove(function(e){
+    var m = {
+      x : e.pageX,
+      y : e.pageY
+    }
+    //radians
+    var adj = ($("#gradient-hero").outerWidth() * 0.5) - m.x
+    var opp = ($("#gradient-hero").outerHeight() * 0.5) - m.y
+    var tan = opp / adj
+    var atan = Math.atan(tan)
+    //degs
+    atan *= (180 / Math.PI)
+    atan = parseInt(Math.abs(atan*0.2))
+    $("#gradient-hero").css("background-image", "linear-gradient(" + atan + "deg, #7421D6 0%, #26C6A3 100%)")
+});
 
 // https://css-tricks.com/snippets/jquery/smooth-scrolling/
 $(function() {
