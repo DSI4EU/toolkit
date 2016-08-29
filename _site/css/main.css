@@ -1,7 +1,14 @@
 @media screen and (max-width: 600px) {
+  #all {
+    width: 91%; }
+
   header {
-    padding: 23px 0 28px 0;
-    width: 97%; }
+    padding: 23px 0 28px 0; }
+
+  h1 {
+    margin: 15px 0;
+    font-size: 42px;
+    line-height: 55px; }
 
   .hero .subhero {
     width: 100% !important; }
@@ -13,12 +20,42 @@
   .big-spacer {
     margin: 75px 0; }
 
-  .gradient-hero {
-    padding-top: 90px; } }
+  #gradient-hero {
+    padding-top: 100px;
+    padding-bottom: 50px; }
+    #gradient-hero .subtitle {
+      width: 91%; }
+    #gradient-hero button {
+      margin-top: 35px; }
+
+  .double-column {
+    flex-wrap: wrap; }
+    .double-column section {
+      width: 100%;
+      margin-bottom: 50px; }
+    .double-column section p {
+      margin: 0; }
+
+  #high-margin {
+    padding-top: 50px; }
+
+  .big-picture {
+    padding: 50px 0; }
+    .big-picture .subtitle {
+      width: 100%; }
+    .big-picture .double-column {
+      margin-top: 25px; } }
 @media screen and (min-width: 601px) {
+  #all {
+    width: 93%; }
+
   header {
-    padding: 50px 0 55px 0;
-    width: 100%; }
+    padding: 50px 0 55px 0; }
+
+  h1 {
+    margin: 20px 0;
+    font-size: 48px;
+    line-height: 55px; }
 
   .hero .subhero {
     width: 66%; }
@@ -28,7 +65,31 @@
     line-height: 35px; }
 
   .big-spacer {
-    margin: 150px 0; } }
+    margin: 150px 0; }
+
+  #gradient-hero {
+    justify-content: center;
+    height: 90vh; }
+    #gradient-hero .subtitle {
+      width: 66%; }
+    #gradient-hero button {
+      margin-top: 50px; }
+
+  .double-column section {
+    width: 35%; }
+
+  #high-margin {
+    margin-bottom: 87px;
+    padding-top: 87px; }
+
+  .big-picture {
+    padding: 75px 0; }
+    .big-picture .subtitle {
+      width: 66%; }
+    .big-picture .double-column {
+      margin-top: 60px; }
+      .big-picture .double-column section p {
+        margin: 25px 0; } }
 html, body {
   height: 100%; }
 
@@ -42,8 +103,6 @@ a {
   cursor: pointer; }
 
 h1 {
-  font-size: 48px;
-  margin: 20px 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 300; }
 
@@ -122,7 +181,6 @@ button {
     margin-right: 10px; }
 
 #all {
-  width: 93%;
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 20px;
@@ -177,48 +235,36 @@ button {
 .svg {
   display: none; }
 
-.gradient-hero {
+#gradient-hero {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 90vh;
   background-image: linear-gradient(-134deg, #7421D6 0%, #26C6A3 100%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   color: #F3F3F3 !important; }
-  .gradient-hero .subtitle {
-    width: 66%;
+  #gradient-hero .subtitle {
     margin: 0 auto;
     opacity: 0.7; }
-  .gradient-hero button {
+  #gradient-hero button {
     color: #F3F3F3;
-    border-color: #F3F3F3;
-    margin-top: 50px; }
-
-.high-margin {
-  margin-top: 82vh;
-  margin-bottom: 87px; }
+    border-color: #F3F3F3; }
 
 .double-column {
   display: flex;
   justify-content: space-around; }
   .double-column section {
-    text-align: center;
-    width: 35%; }
+    text-align: center; }
     .double-column section svg {
       height: 50px; }
       .double-column section svg #scale {
         stroke: #1DC9A0; }
     .double-column section p {
-      margin: 25px 0;
       line-height: 31px; }
 
 .big-picture {
   position: relative;
   justify-content: center;
-  padding: 87px 0;
   color: #F3F3F3 !important; }
   .big-picture:before {
     content: "";
@@ -243,16 +289,14 @@ button {
     background: black;
     z-index: -1; }
   .big-picture .subtitle {
-    width: 66%;
     margin: 0 auto;
     opacity: 0.7; }
-  .big-picture .double-column {
-    margin-top: 60px; }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   height: 51px;
   margin: 0 auto;
   z-index: 2;

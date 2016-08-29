@@ -27,24 +27,34 @@ $content-width:      93%;
 $content-max-width:  1200px;
 
 // media queries
-$mobile-width:            600px;
+$mobile-width:  91%;
+$mobile-break:  600px;
+
 
 @mixin mobile {
-  @media screen and (max-width: $mobile-width) {
+  @media screen and (max-width: $mobile-break) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media screen and (min-width: $mobile-width + 1) {
+  @media screen and (min-width: $mobile-break + 1) {
     @content;
   }
 }
 
 @include mobile {
+  #all {
+    width: $mobile-width;
+  }
   header {
     padding: 23px 0 28px 0;
-    width: 97%;
+  }
+
+  h1 {
+    margin: 15px 0;
+    font-size: 42px;
+    line-height: 55px;
   }
   .hero {
     .subhero {
@@ -58,15 +68,51 @@ $mobile-width:            600px;
   .big-spacer {
     margin: $block-spacer*1.5 0;
   }
-  .gradient-hero {
-    padding-top: 90px;
+  #gradient-hero {
+    padding-top: 100px;
+    padding-bottom: $block-spacer;
+    .subtitle {
+      width: $mobile-width;
+    }
+    button {
+      margin-top: 35px;
+    }
+  }
+  .double-column {
+    flex-wrap: wrap;
+    section {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    section p {
+      margin: 0;
+    }
+  }
+  #high-margin {
+    padding-top: 50px;
+  }
+  .big-picture {
+    padding: 50px 0;
+    .subtitle {
+      width: 100%;
+    }
+    .double-column {
+      margin-top: 25px;
+    }
   }
 }
 
 @include desktop {
+  #all {
+    width: $content-width;
+  }
   header {
     padding: 50px 0 55px 0;
-    width: 100%;
+  }
+  h1 {
+    margin: 20px 0;
+    font-size: $h1-size;
+    line-height: 55px;
   }
   .hero {
     .subhero {
@@ -79,6 +125,37 @@ $mobile-width:            600px;
   }
   .big-spacer {
     margin: $block-spacer*3 0;
+  }
+  #gradient-hero {
+    justify-content: center;
+    height: 90vh;
+    .subtitle {
+      width: 66%;
+    }
+    button {
+      margin-top: $block-spacer;
+    }
+  }
+  .double-column {
+    section {
+      width: 35%;
+    }
+  }
+  #high-margin {
+    margin-bottom: 87px;
+    padding-top: 87px;
+  }
+  .big-picture {
+    padding: 75px 0;
+    .subtitle {
+      width: 66%;
+    }
+    .double-column {
+      margin-top: 60px;
+      section p {
+        margin: 25px 0;
+      }
+    }
   }
 }
 

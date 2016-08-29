@@ -1,45 +1,33 @@
-.gradient-hero
+#gradient-hero
   position: absolute
   left: 0
   top: 0
-  width: 100vw
-  height: 90vh
   background-image: linear-gradient(-134deg, #7421D6 0%, #26C6A3 100%)
   display: flex
   flex-direction: column
-  justify-content: center
   color: $light-gray !important
   .subtitle
-    width: 66%
     margin: 0 auto
     opacity: 0.7
   button
     color: $light-gray
     border-color: $light-gray
-    margin-top: $block-spacer
-
-.high-margin
-  margin-top: 82vh
-  margin-bottom: 87px
 
 .double-column
   display: flex
   justify-content: space-around
   section
     text-align: center
-    width: 35%
     svg
       height: 50px
       #scale
         stroke: $teal
-    p
-      margin: 25px 0
+    p      
       line-height: 31px
 
 .big-picture
   position: relative
   justify-content: center
-  padding: 87px 0
   color: $light-gray !important
   &:before
     content: ""
@@ -64,8 +52,5 @@
     background: black
     z-index: -1
   .subtitle
-    width: 66%
     margin: 0 auto
     opacity: 0.7
-  .double-column
-    margin-top: 60px

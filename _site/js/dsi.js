@@ -91,7 +91,18 @@ $(".indicator-send").click(function(){
   $(this).parent().parent().fadeOut()
 })
 
-//https://css-tricks.com/snippets/jquery/smooth-scrolling/
+// index top margin
+function gradientMargins() {
+  var gradientHeight = $("#gradient-hero").outerHeight()
+  var headerHeight = $("header").outerHeight();
+  gradientHeight -= headerHeight  
+  $('#high-margin').css("margin-top", gradientHeight + "px")
+}
+
+gradientMargins()
+
+
+// https://css-tricks.com/snippets/jquery/smooth-scrolling/
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
