@@ -183,6 +183,8 @@ button {
     width: 35%; }
     .double-column section svg {
       height: 50px; }
+      .double-column section svg #scale {
+        stroke: #1DC9A0; }
     .double-column section p {
       margin: 25px 0;
       line-height: 31px; }
@@ -431,6 +433,8 @@ footer {
     color: #797979; }
   .hero svg {
     height: 50px; }
+  .hero #scale {
+    stroke: #000000; }
 
 .centered-text .light {
   margin-top: -16px; }
