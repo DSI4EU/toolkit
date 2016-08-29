@@ -33,8 +33,10 @@
     .double-column section {
       width: 100%;
       margin-bottom: 50px; }
-    .double-column section p {
-      margin: 0; }
+      .double-column section button {
+        margin-top: 25px; }
+      .double-column section p {
+        margin: 0; }
 
   #high-margin {
     padding-top: 50px; }
@@ -69,7 +71,7 @@
 
   #gradient-hero {
     justify-content: center;
-    height: 90vh; }
+    min-height: 90vh; }
     #gradient-hero .subtitle {
       width: 66%; }
     #gradient-hero button {
@@ -212,6 +214,9 @@ button {
   height: 2px;
   background: #282930;
   margin: 50px 0; }
+
+.slim-screen-hero {
+  padding: 123px 0 50px 0; }
 
 .pace {
   -webkit-pointer-events: none;

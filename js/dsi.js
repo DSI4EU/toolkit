@@ -95,12 +95,18 @@ $(".indicator-send").click(function(){
 function gradientMargins() {
   var gradientHeight = $("#gradient-hero").outerHeight()
   var headerHeight = $("header").outerHeight();
-  gradientHeight -= headerHeight  
+  gradientHeight -= headerHeight
   $('#high-margin').css("margin-top", gradientHeight + "px")
+  if (gradientHeight > (window.innerHeight * 0.9)) {
+    // console.log("bb")
+    // $("#gradient-hero").addClass("slim-screen-hero")
+  }
+}
+if ($("#gradient-hero").outerHeight() > (window.innerHeight * 0.9)) {
+  $("#gradient-hero").addClass("slim-screen-hero")
 }
 
 gradientMargins()
-
 
 // https://css-tricks.com/snippets/jquery/smooth-scrolling/
 $(function() {

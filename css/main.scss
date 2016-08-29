@@ -83,9 +83,12 @@ $mobile-break:  600px;
     section {
       width: 100%;
       margin-bottom: 50px;
-    }
-    section p {
-      margin: 0;
+      button {
+        margin-top: 25px;
+      }
+      p {
+        margin: 0;
+      }
     }
   }
   #high-margin {
@@ -128,7 +131,7 @@ $mobile-break:  600px;
   }
   #gradient-hero {
     justify-content: center;
-    height: 90vh;
+    min-height: 90vh;
     .subtitle {
       width: 66%;
     }
