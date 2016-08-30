@@ -60,6 +60,9 @@ $mobile-break:  600px;
     .subhero {
       width: 100% !important;
     }
+    svg {
+      margin-top: 40px;
+    }
   }
   .subtitle {
     font-size: 18px;
@@ -102,6 +105,13 @@ $mobile-break:  600px;
     .double-column {
       margin-top: 25px;
     }
+  }
+  .scale-content {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .tags {
+    width: 70%;
   }
 }
 
@@ -159,6 +169,20 @@ $mobile-break:  600px;
         margin: 25px 0;
       }
     }
+  }
+  .scale-content {
+    width: 66%;
+  }
+  .quotes {
+    column-count: 2;
+    column-gap: 10px;
+  }
+  .tags {
+    width: 25%;
+  }
+  .questions {
+    width: 66%;
+    padding-top: 60px;
   }
 }
 

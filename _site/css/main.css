@@ -12,6 +12,8 @@
 
   .hero .subhero {
     width: 100% !important; }
+  .hero svg {
+    margin-top: 40px; }
 
   .subtitle {
     font-size: 18px;
@@ -46,7 +48,14 @@
     .big-picture .subtitle {
       width: 100%; }
     .big-picture .double-column {
-      margin-top: 25px; } }
+      margin-top: 25px; }
+
+  .scale-content {
+    width: 100%;
+    margin-bottom: 50px; }
+
+  .tags {
+    width: 70%; } }
 @media screen and (min-width: 601px) {
   #all {
     width: 93%; }
@@ -91,7 +100,21 @@
     .big-picture .double-column {
       margin-top: 60px; }
       .big-picture .double-column section p {
-        margin: 25px 0; } }
+        margin: 25px 0; }
+
+  .scale-content {
+    width: 66%; }
+
+  .quotes {
+    column-count: 2;
+    column-gap: 10px; }
+
+  .tags {
+    width: 25%; }
+
+  .questions {
+    width: 66%;
+    padding-top: 60px; } }
 html, body {
   height: 100%; }
 
@@ -523,16 +546,13 @@ footer {
 .tags {
   color: #1DC9A0;
   display: flex;
-  width: 25%;
   margin: 50px auto;
   justify-content: space-between;
   font-weight: 600; }
 
 .quotes {
   width: 100%;
-  margin: 50px auto;
-  column-count: 2;
-  column-gap: 10px; }
+  margin: 50px auto; }
   .quotes .container {
     padding-bottom: 10px; }
     .quotes .container .quote {
@@ -575,26 +595,21 @@ footer {
         border-color: #F3F3F3;
         color: #F3F3F3; }
 
-.questions {
-  width: 66%;
-  padding-top: 60px; }
-  .questions .question {
-    margin-bottom: 100px;
-    transition: opacity 0.25s ease, transform 0.25 ease;
-    opacity: 0.4;
-    transform: scale(0.995); }
-    .questions .question:last-child {
-      margin-bottom: 20px; }
-    .questions .question .description {
-      color: #797979;
-      margin-top: -10px; }
+.questions .question {
+  margin-bottom: 100px;
+  transition: opacity 0.25s ease, transform 0.25 ease;
+  opacity: 0.4;
+  transform: scale(0.995); }
+  .questions .question:last-child {
+    margin-bottom: 20px; }
+  .questions .question .description {
+    color: #797979;
+    margin-top: -10px; }
 
 .active {
   opacity: 1 !important;
   transform: scale(1) !important; }
 
-.scale-content {
-  width: 66%; }
-  .scale-content p, .scale-content ol {
-    line-height: 31px;
-    color: #797979; }
+.scale-content p, .scale-content ol {
+  line-height: 31px;
+  color: #797979; }
