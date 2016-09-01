@@ -87,8 +87,32 @@ $(".define-link").click(function() {
   $(this).hide()
 })
 
+function thankify(parent) {
+  var content = parent.html()
+  parent.data("content", content)
+  parent.text("")
+  //Thanks!
+  var h2 = $("<h2>")
+  h2.text("Thanks")
+  //link
+  var p = $("<p>")
+  var a = $("<a>")
+  a.text("define again")
+  a.addClass("reverse-card")
+  parent.append(h2)
+  p.append(a)
+  parent.append(p)
+
+  //i know
+  $(".reverse-card").click(function(){
+    var p = $(this).parent().parent()
+    var content = p.data("content")
+    p.html(content)
+  })
+}
+
 $(".indicator-send").click(function(){
-  $(this).parent().parent().fadeOut()
+  thankify($(this).parent().parent())
 })
 
 // index top margin
