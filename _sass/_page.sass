@@ -39,7 +39,6 @@
       -webkit-column-break-inside: avoid
       page-break-inside: avoid
       break-inside: avoid
-      transition: height 0.5s ease
       p, h2, span, textarea
         color: $light-gray
       .epithet
@@ -72,7 +71,7 @@
         border-color: $light-gray
         color: $light-gray
 
-.questions  
+.questions
   .question
     margin-bottom: 100px
     &:last-child
@@ -87,6 +86,9 @@
 .active
   opacity: 1 !important
   transform: scale(1) !important
+
+#knowledge-spinner
+  display: none
 
 // scale
 .scale-content
