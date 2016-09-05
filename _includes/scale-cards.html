@@ -1,7 +1,7 @@
 <div class="quotes">
   {% for card in site.scale-cards %}
     <div class="container">
-      <div class="quote">
+      <div class="quote" id="{{card.github-tag}}">
         <h2>{{ card.title }}</h2>
         <p class="long small-block">{{ card.description }}</p>
         <p>
@@ -11,12 +11,19 @@
           {% for value in card.indicators %}
             <div class="indicator {% if forloop.first %}active{% endif %}">
               <p>
-                {{forloop.index}}:
+                {{forloop.index | minus: 1}}:
               </p>
               <textarea onkeyup="auto_grow(this)" placeholder="{{ value }}"></textarea>
             </div>
           {% endfor %}
           <button class="indicator-send">Send →</button>
+          <div class="spinner scale-spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+          </div>
         </div>
       </div>
     </div>

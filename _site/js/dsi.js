@@ -3,7 +3,7 @@
 //testing
 function scrollToButtons(){
   var top = parseInt($("#page-content").offset().top)
-  $("body").scrollTo(0, top);
+  $("body").scrollTo(0, top)
 }
 
 //hamburger menu
@@ -66,7 +66,7 @@ $("textarea").focus(function() {
 $(".question textarea").focus(function() {
   $('html, body').animate({
         scrollTop: $(this).parent().offset().top - 100
-    }, 400);
+    }, 400)
 })
 
 //keyboard focusout
@@ -104,21 +104,41 @@ function thankify(parent) {
   parent.append(p)
 }
 
-//listen to generated elements
+//send quote to github
 $('.quote').on('click', '.indicator-send', function(){
-  thankify($(this).parent().parent())
-});
+  var issue = ""
+  var name = $("#username").val()
+  if (name === "") name = "anonymous"
+  var title = $(this).parent().parent().find("h2").html()
+  var tag = $(this).parent().parent().attr("id")
+  var description = $(this).parent().parent().find(".long").html()
+  issue += "**" + title  + "**" + "<br>"
+  issue += description + "<br><br>"
+
+  $(this).parent().find('.indicator').each(function(index) {
+    var text = $(this).find('textarea').val()
+    issue += index + ": " + text + "<br>"
+  })
+
+  issue += "<br> *Author: " + name + "*"
+
+  $(this).hide()
+  $(this).parent().find(".scale-spinner").show()
+
+  var indicator = $(this)
+  postIssue(title, issue, [tag], function(){thankify(indicator.parent().parent())})
+})
 
 $('.quote').on('click', '.reverse-card', function(){
   var p = $(this).parent().parent()
   var content = p.data("content")
   p.html(content)
-});
+})
 
 // index top margin
 function gradientMargins() {
   var gradientHeight = $("#gradient-hero").outerHeight()
-  var headerHeight = $("header").outerHeight();
+  var headerHeight = $("header").outerHeight()
   gradientHeight -= headerHeight
   $('#high-margin').css("margin-top", gradientHeight + "px")
   if (gradientHeight > (window.innerHeight * 0.9)) {
@@ -146,27 +166,27 @@ $(document).mousemove(function(e){
     atan *= (180 / Math.PI)
     atan = parseInt(Math.abs(atan*0.2))
     $("#gradient-hero").css("background-image", "linear-gradient(" + atan + "deg, #7421D6 0%, #26C6A3 100%)")
-});
+})
 
 // https://css-tricks.com/snippets/jquery/smooth-scrolling/
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      var target = $(this.hash)
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']')
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top - 100
-        }, 1000);
-        return false;
+        }, 1000)
+        return false
       }
     }
-  });
-});
+  })
+})
 
 //GITHUB ISSUES ENGINE
-var uploadURL ="https://api.github.com/repos/dsi4eu/toolkit/issues";
-function postIssue(title, body, labels, link) {
+var uploadURL ="https://api.github.com/repos/dsi4eu/toolkit/issues"
+function postIssue(title, body, labels, callback) {
   $.ajax({
     url: uploadURL,
     type: "POST",
@@ -182,30 +202,38 @@ function postIssue(title, body, labels, link) {
     })
   })
   .done(function() {
-    if(link) {
-      window.location.href = link;
+    if(callback) {
+      callback()
     }
-  });
+  })
 }
 
 //share knowledge
 $("#knowledge-send").click(function(){
   var knowledge = ""
-  $(".question").each(function() {
+  $(".question").each(function(index) {
     var title = $(this).find("h2").text()
     var body = $(this).find("textarea").val()
     if (body !== "") {
       knowledge += "**" + title + "**"
       knowledge += "<br>"
-      knowledge += body
+      if(title.indexOf("picture") > -1) {
+        knowledge += "![" + body + "](" + body + ")"
+      } else {
+        knowledge += body
+      }
       knowledge += "<br><br>"
     }
   })
   if(knowledge !== "") {
     $(this).hide()
     $("#knowledge-spinner").show()
-    postIssue("knowledge", knowledge, ["knowledge"], "/thanks/")
+    postIssue("Knowledge", knowledge, ["knowledge"], function() {window.location.href = "/thanks/"})
   } else {
     alert("fill at least one field before sending!")
   }
 })
+
+function goToThanks() {
+
+}

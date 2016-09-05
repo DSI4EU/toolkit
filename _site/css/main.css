@@ -270,7 +270,6 @@ button {
   text-align: center;
   font-size: 10px; }
   .spinner > div {
-    background-color: #1DC9A0;
     height: 100%;
     width: 6px;
     display: inline-block;
@@ -649,6 +648,13 @@ footer {
 
 #knowledge-spinner {
   display: none; }
+  #knowledge-spinner > div {
+    background-color: #1DC9A0; }
+
+.scale-spinner {
+  display: none; }
+  .scale-spinner > div {
+    background-color: #F3F3F3; }
 
 .scale-content p, .scale-content ol {
   line-height: 31px;
