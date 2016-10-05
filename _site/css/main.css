@@ -594,6 +594,7 @@ footer {
     padding-bottom: 10px; }
     .quotes .container .quote {
       background: #282930;
+      transition: background 0.3s ease;
       border-radius: 3px;
       padding: 10px 27px;
       -webkit-column-break-inside: avoid;

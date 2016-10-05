@@ -26,12 +26,12 @@ picture-subtitle: Workshops, events and meetups are organized all around Europe 
 # WORKSHOPS #
 left-ws: Latest workshop
 left-link-text: Size matters?
-left-link: http://google.com
+left-link: http://imal.org/fr/node/1791
 left-desc: 31 May 2016, iMal, Brussels.
 
 right-ws: Next workshop
 right-link-text: DSI Hunt
-right-link: http://google.com
+right-link: https://digitalsocial.eu/blog/15/dsi-hunt-workshop-at-maker-faire-rome-friday-14-october-2016
 right-desc: 12 Oct 2016, Maker Faire Rome.
 
 

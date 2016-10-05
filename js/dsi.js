@@ -93,49 +93,68 @@ $(".define-link").click(function() {
 function thankify(parent) {
   var content = parent.html()
   parent.data("content", content)
+  parent.css("background", "#797979")
   parent.text("")
   //Thanks!
   var h2 = $("<h2>")
-  h2.text("Thanks")
+  h2.text("Thank you.")
   //link
-  var p = $("<p>")
-  var a = $("<a>")
-  a.text("define again")
-  a.addClass("reverse-card")
+  var p = $("<p>You can <a class='reverse-card'> define this card again</a>, define more indicators or <a href='https://github.com/DSI4EU/toolkit/issues'>see all the submissions on Github.</a>")
+  p.addClass("long")
+  p.addClass("small-block")
+  // var a = $("<a>")
+  // a.text("define again")
+  // a.addClass("reverse-card")
+  // p.append(a)
   parent.append(h2)
-  p.append(a)
   parent.append(p)
 }
 
 //send quote to github
 $('.quote').on('click', '.indicator-send', function(){
-  var issue = ""
-  var name = $("#username").val()
-  if (name === "") name = "anonymous"
-  var title = $(this).parent().parent().find("h2").html()
-  var tag = $(this).parent().parent().attr("id")
-  var description = $(this).parent().parent().find(".long").html()
-  issue += "**" + title  + "**" + "<br>"
-  issue += description + "<br><br>"
 
+  var answered = false
   $(this).parent().find('.indicator').each(function(index) {
     var text = $(this).find('textarea').val()
+    if (text !== "") {
+      answered = true
+    }
     issue += index + ": " + text + "<br>"
   })
 
-  issue += "<br> *Author: " + name + "*"
+  if(answered) {
+    var issue = ""
+    var name = $("#username").val()
+    if (name === "") name = "anonymous"
+    var title = $(this).parent().parent().find("h2").html()
+    var tag = $(this).parent().parent().attr("id")
+    var description = $(this).parent().parent().find(".long").html()
+    issue += "**" + title  + "**" + "<br>"
+    issue += description + "<br><br>"
 
-  $(this).hide()
-  $(this).parent().find(".scale-spinner").show()
+    issue += "<br> *Author: " + name + "*"
 
-  var indicator = $(this)
-  postIssue(title, issue, [tag], function(){thankify(indicator.parent().parent())})
+    var link = $(this)
+    link.hide()
+    link.parent().find(".scale-spinner").show()
+
+    var indicator = $(this)
+    postIssue(title, issue, [tag], function(){
+      link.show()
+      link.parent().find(".scale-spinner").hide()
+      thankify(indicator.parent().parent())
+    })
+  } else {
+    alert("please fill at least one indicator before sending")
+  }
 })
 
 $('.quote').on('click', '.reverse-card', function(){
   var p = $(this).parent().parent()
+  p.css("background", "#282930")  
   var content = p.data("content")
   p.html(content)
+  $(this).parent().find(".scale-spinner").hide()
 })
 
 // index top margin
