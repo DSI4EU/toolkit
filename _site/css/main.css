@@ -22,12 +22,12 @@
   .big-spacer {
     margin: 75px 0; }
 
-  #gradient-hero {
+  #triangle-hero {
     padding-top: 100px;
     padding-bottom: 50px; }
-    #gradient-hero .subtitle {
+    #triangle-hero .subtitle {
       width: 91%; }
-    #gradient-hero button {
+    #triangle-hero button {
       margin-top: 35px; }
 
   .double-column {
@@ -78,12 +78,12 @@
   .big-spacer {
     margin: 150px 0; }
 
-  #gradient-hero {
+  #triangle-hero {
     justify-content: center;
     min-height: 90vh; }
-    #gradient-hero .subtitle {
+    #triangle-hero .subtitle {
       width: 66%; }
-    #gradient-hero button {
+    #triangle-hero button {
       margin-top: 50px; }
 
   .double-column section {
@@ -300,18 +300,23 @@ button {
   20% {
     transform: scaleY(1);
     -webkit-transform: scaleY(1); } }
-#gradient-hero {
+#triangle-hero {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: linear-gradient(-134deg, #7421D6 0%, #26C6A3 100%);
   display: flex;
   flex-direction: column;
-  color: #F3F3F3 !important; }
-  #gradient-hero .subtitle {
+  color: #F3F3F3 !important;
+  height: 90%; }
+  #triangle-hero canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  #triangle-hero .subtitle {
     margin: 0 auto;
     opacity: 0.7; }
-  #gradient-hero button {
+  #triangle-hero button {
     color: #F3F3F3;
     border-color: #F3F3F3; }
 
