@@ -4,6 +4,7 @@ permalink: /scale/
 title:  DSI scale.
 imageURL: "../assets/scale.svg"
 subtitle: A tool for assessing the DSI growth defined by you
+button: create your DSI scale
 h2: Indicators
 ---
 

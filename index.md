@@ -26,7 +26,7 @@ picture-subtitle: Workshops, events and meetups are organized all around Europe 
 # WORKSHOPS #
 left-ws: Latest workshop
 left-link-text: Size matters?
-left-link: http://imal.org/fr/node/1791
+left-link: https://digitalsocial.eu/blog/25/size-matters-evaluating-prosperity-and-growth
 left-desc: 31 May 2016, iMal, Brussels.
 
 right-ws: Next workshop
