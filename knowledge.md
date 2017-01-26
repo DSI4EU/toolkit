@@ -13,16 +13,10 @@ tags:
   - three
 bottom-button: Share what you've learned
 quotes:
-  - text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium.
-    name:  Jaromil
-    epithet: Son of Gloin
-  - text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
-    name:  Gimli
-    epithet: Son of Gloin
-  - text: Lorem ipsum dolor sit amet, consectetuer adipiscing
-    name:  Gimli
-    epithet: Son of Gloin
-  - text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium.
-    name:  Gimli
-    epithet: Son of Gloin
+  - text:  can rely on the support of OpenTechSchool which is a no profit initiative. Connecting with a larger initiative helped me to run the project without the need of scaling as a big organization.
+    name:  Rachel Uwa 
+    epithet: School of MAA
+  - text: We do not sell the hardware, we are selling the experiment that people can make with Open Drop.
+    name:  Urs Gaudenz
+    epithet: Open Drop
 ---
