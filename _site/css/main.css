@@ -610,6 +610,8 @@ footer {
       break-inside: avoid; }
       .quotes .container .quote p, .quotes .container .quote h2, .quotes .container .quote span, .quotes .container .quote textarea {
         color: #F3F3F3; }
+      .quotes .container .quote h2 {
+        font-weight: 400; }
       .quotes .container .quote p {
         font-weight: 300; }
       .quotes .container .quote .epithet {
