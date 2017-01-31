@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="hero">
-  <h1 class="post-title">{{ page.h1 }}</h1>
+  <h1 class="post-title dark-color">{{ page.h1 }}</h1>
   <p class="subtitle subhero">{{ page.subtitle }}</p>
 </div>
 
@@ -12,7 +12,7 @@ layout: default
 <div class="questions">
   {% for question in page.questions %}
     <div class="question {% if forloop.first %}active{% endif %}">
-      <h2>{{ question.text }}</h2>
+      <h2 class="dark-color">{{ question.text }}</h2>
       {% if question.description %}
         <p class="long description">{{ question.description }}</p>
       {% endif %}

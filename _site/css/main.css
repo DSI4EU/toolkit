@@ -214,6 +214,9 @@ button {
 .light {
   color: #797979; }
 
+.dark-color {
+  color: #282930; }
+
 .dark {
   background: #282930; }
 
@@ -665,3 +668,5 @@ footer {
 .scale-content p, .scale-content ol {
   line-height: 31px;
   color: #797979; }
+.scale-content h2 {
+  color: #282930; }
