@@ -5,7 +5,7 @@ openness: So strongly and metaphysically did I conceive of my situation then, th
 
 The DSI Scale is an open source tool built for and by the community of digital social innovators. It helps to assess the DSI growth considering values as the knowledge sharing, the technological openness, the societal good.
 
-![open drop](/assets/pics/open-drop.png)
+![open drop](../assets/pics/open-drop.png)
 
 The DSI Scale includes a set of indicators that could help you and policy makers to assess your DSI projects in order to reach a better impact. The scale is not predefined: you propose the meaning of each indicator values ranging from 0 to 4.
 
