@@ -18,3 +18,4 @@ markdown: kramdown
 collections:
 - scale-cards
 - case-studies
+- events

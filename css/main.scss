@@ -63,6 +63,14 @@ $mobile-break:  600px;
       width: 100%;
     }
   }
+  .events {
+    .event {
+      width: 100%;
+      .event-thumb {
+        height: 230px;
+      }
+    }
+  }
   .hero {
     .subhero {
       width: 100% !important;
@@ -136,7 +144,7 @@ $mobile-break:  600px;
   }
   .blog {
     .openness {
-      width: 66%;      
+      width: 66%;
     }
     > h2, > h3, > p {
       width: 66%;
@@ -156,6 +164,14 @@ $mobile-break:  600px;
       width: 152%;
       transform: translate(-17%, 0);
       margin: $block-spacer 0
+    }
+  }
+  .events {
+    .event {
+      width: 49%;
+      .event-thumb {
+        height: 330px;
+      }
     }
   }
   .hero {

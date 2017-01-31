@@ -13,6 +13,11 @@
   .blog p img {
     width: 100%; }
 
+  .events .event {
+    width: 100%; }
+    .events .event .event-thumb {
+      height: 230px; }
+
   .hero .subhero {
     width: 100% !important; }
   .hero svg {
@@ -87,6 +92,11 @@
     width: 152%;
     transform: translate(-17%, 0);
     margin: 50px 0; }
+
+  .events .event {
+    width: 49%; }
+    .events .event .event-thumb {
+      height: 330px; }
 
   .hero .subhero {
     width: 66%; }
@@ -594,6 +604,9 @@ footer {
     opacity: 0; }
   100% {
     opacity: 1; } }
+.large-image svg {
+  height: 60px !important; }
+
 .hero {
   width: 100%; }
   .hero .subhero {
@@ -724,7 +737,7 @@ footer {
     color: #F3F3F3;
     display: flex; }
     .blog .openness h2:before {
-      background-image: url("/assets/open-source.svg");
+      background-image: url("../assets/open-source.svg");
       background-size: 34px 33px;
       width: 34px;
       height: 33px;
@@ -732,3 +745,21 @@ footer {
       margin-right: 10px; }
   .blog .openness p {
     color: #F3F3F3; }
+
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: -2%; }
+  .events .event {
+    margin-bottom: 2%; }
+    .events .event .event-thumb {
+      background-size: cover;
+      width: 100%; }
+    .events .event p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #797979;
+      line-height: 1.75; }
