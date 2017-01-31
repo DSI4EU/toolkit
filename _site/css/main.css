@@ -452,7 +452,7 @@ footer {
   align-content: center; }
   footer #footer-wave {
     position: absolute;
-    top: -12px;
+    top: -11px;
     background: url("../assets/dark-wave.svg");
     width: 100%;
     height: 12px; }
@@ -610,6 +610,8 @@ footer {
       break-inside: avoid; }
       .quotes .container .quote p, .quotes .container .quote h2, .quotes .container .quote span, .quotes .container .quote textarea {
         color: #F3F3F3; }
+      .quotes .container .quote p {
+        font-weight: 300; }
       .quotes .container .quote .epithet {
         margin-top: -8px; }
       .quotes .container .quote .line-divider {
