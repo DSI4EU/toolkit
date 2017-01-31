@@ -18,6 +18,7 @@ $bold-weight: 600;
 // sizes
 $h1-size: 48px;
 $h2-size: 28px;
+$h3-size: 21px;
 $p-size: 18px;
 $small-size: 15px;
 
@@ -56,6 +57,11 @@ $mobile-break:  600px;
     margin: 15px 0;
     font-size: 42px;
     line-height: 55px;
+  }
+  .blog {
+    p img {
+      width: 100%;
+    }
   }
   .hero {
     .subhero {
@@ -127,6 +133,30 @@ $mobile-break:  600px;
     margin: 20px 0;
     font-size: $h1-size;
     line-height: 55px;
+  }
+  .blog {
+    .openness {
+      width: 66%;      
+    }
+    > h2, > h3, > p {
+      width: 66%;
+      margin: 0 auto;
+    }
+    h3 {
+      color: $dark-blue;
+      margin-top: $block-spacer;
+    }
+    p {
+      margin: $block-spacer*0.3 auto;
+      line-height: 31px;
+      color: $dark-gray;
+    }
+    p img {
+      //workaround because markdown wraps img in p tags
+      width: 152%;
+      transform: translate(-17%, 0);
+      margin: $block-spacer 0
+    }
   }
   .hero {
     .subhero {

@@ -17,3 +17,4 @@ markdown: kramdown
 #Collections
 collections:
 - scale-cards
+- case-studies
