@@ -170,7 +170,7 @@ function triangleMargins() {
   }
 }
 if ($("#triangle-hero").outerHeight() > (window.innerHeight * 0.9)) {
-  $("#triangle-hero").addClass("slim-screen-hero")
+  // $("#triangle-hero").addClass("slim-screen-hero")
 }
 triangleMargins()
 

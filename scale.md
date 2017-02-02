@@ -19,6 +19,4 @@ How to build your version of the DSI scale:
 – Add your meanings to the ratings from 0 to 4 (0=low; 4=high)
 
 Remember: you can define one indicator multiple times; the granularity of the meanings is really important.
-
-[see all the submissions](https://github.com/DSI4EU/toolkit/issues){:target='_blank'}
- or create your DSI scale here below.
+Create your DSI scale here below.

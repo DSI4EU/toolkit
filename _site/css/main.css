@@ -110,6 +110,7 @@
 
   #triangle-hero {
     justify-content: center;
+    align-items: center;
     min-height: 90vh; }
     #triangle-hero .subtitle {
       width: 66%; }
