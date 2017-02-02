@@ -137,7 +137,9 @@
 
   .quotes {
     column-count: 2;
-    column-gap: 10px; }
+    column-gap: 10px;
+    -moz-column-count: 2;
+    -moz-column-gap: 10px; }
 
   .tags {
     width: 25%; }
@@ -763,3 +765,36 @@ footer {
       align-items: center;
       color: #797979;
       line-height: 1.75; }
+
+.workshops-info ul {
+  color: #797979;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  list-style-type: none;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  column-count: 3;
+  -moz-column-count: 3;
+  margin-bottom: 50px; }
+
+.downloads {
+  margin-bottom: 50px; }
+  .downloads a {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #282930;
+    display: block;
+    margin-bottom: 10px; }
+    .downloads a span {
+      border-bottom: 2px solid #282930; }
+
+.noun {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 14.4px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #797979; }

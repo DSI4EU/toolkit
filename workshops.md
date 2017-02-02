@@ -5,6 +5,39 @@ title:  Workshops.
 imageURL: "../assets/workshops.svg"
 subtitle: In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew. Now hands
 second-title: Cities and editions
+third-title: Participants list
+participants:
+  - Barrett Hammill
+  - Margit Farhat
+  - Sulema Berkey
+  - Noemi Dannenberg
+  - Solomon Waldow
+  - Ronda Flanigan
+  - Kendra Harriger
+  - Onie Artrip
+  - Troy Mattocks
+  - Shanda Loeb
+  - Clemmie Tawney
+  - Amalia Oglesbee
+  - Mable Vanriper
+  - Shoshana Kirkendoll
+  - Sydney Mallery
+  - Donita Constant
+  - Whitley Winget
+  - Argelia Kepler
+  - Corey Fedor
+  - Jacinda Iliff
+  - Barrett Hammill
+  - Margit Farhat
+  - Sulema Berkey
+fourth-title: Downloads
+downloads:
+  - text: All the toolkit assets (.zip)
+    href: ../assets/downloads/assets.zip
+  - text: Presentation slides
+    href: http://google.com
+  - text: Mentoring guidelines
+    href: http://amazon.com
 ---
 
 Open Making for Social Impact is the third workshop of the training programs series promoted by DSI4EU. The workshop is dedicated to digital social innovation in the context of the maker movement and open hardware and design community. The workshop takes place at UNDERBROEN a laboratory of local and urban production and it will be led by Zoe Romano (WeMake) and Serena Cangiano (Maind SUPSI) with the participation of Simona Maschi (CIID) and Christian Villum (Danish Design Center).

@@ -223,6 +223,8 @@ $mobile-break:  600px;
   .quotes {
     column-count: 2;
     column-gap: 10px;
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
   }
   .tags {
     width: 25%;
