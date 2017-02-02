@@ -233,6 +233,12 @@ $mobile-break:  600px;
     width: 66%;
     padding-top: 60px;
   }
+  .workshops-info {
+    ul {
+      column-count: 3;
+      -moz-column-count: 3;
+    }
+  }
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
