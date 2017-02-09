@@ -7,16 +7,31 @@ layout: default
   <div class="subtitle subhero">{{ page.subtitle }}</div>
 </div>
 <div class="big-line-divider"></div>
-<div class="blog">  
+<div class="blog">
   {{ content }}
 </div>
 <div class="big-line-divider"></div>
-<div class="centered-text block">
-  <h2 class="dark-color">{{ page.second-title }}</h2>
-</div>
-{% include events.html %}
+{% include tools.html %}
 <div class="big-line-divider"></div>
 <div class="scale-content workshops-info">
+  <h2> {{ page.second-title }} </h2>
+  <div class="downloads">
+    <p class="bold">{{ page.section-one }}</p>
+    {% for link in page.section-one-links %}
+      <a href="{{ link.href }}" target="_blank"><span>{{ link.text }}</span></a>
+    {% endfor %}
+    <p class="bold">{{ page.section-two }}</p>
+    {% for link in page.section-two-links %}
+      <a href="{{ link.href }}" target="_blank"><span>{{ link.text }}</span></a>
+    {% endfor %}
+  </div>
+</div>
+
+
+
+
+<!-- {% include events.html %} -->
+<!-- <div class="scale-content workshops-info">
   <h2>{{ page.third-title }}</h2>
   <ul class="participants">
     {% for participant in page.participants %}
@@ -35,4 +50,4 @@ layout: default
     {% endfor %}
   </div>
   <a class="noun" href="https://thenounproject.com/term/collective-thinking/480262/" target="_blank">Header icon by Artem Kovyazin</a>
-</div>
+</div> -->

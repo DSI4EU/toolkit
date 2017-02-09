@@ -40,6 +40,8 @@ downloads:
     href: http://amazon.com
 ---
 
+## DSI Workshops
+
 Open Making for Social Impact is the third workshop of the training programs series promoted by DSI4EU. The workshop is dedicated to digital social innovation in the context of the maker movement and open hardware and design community. The workshop takes place at UNDERBROEN a laboratory of local and urban production and it will be led by Zoe Romano (WeMake) and Serena Cangiano (Maind SUPSI) with the participation of Simona Maschi (CIID) and Christian Villum (Danish Design Center).
 
 ![workshop](../assets/pics/workshop.jpg)

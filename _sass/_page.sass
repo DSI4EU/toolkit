@@ -31,6 +31,12 @@
   justify-content: space-between
   font-weight: 600
 
+.bold
+  font-weight: bold
+  color: $dark-blue !important
+  margin-bottom: 0
+  margin-top: 30px
+
 .quotes
   width: 100%
   margin: $block-spacer auto
@@ -148,17 +154,19 @@
       color: $light-gray
 
 // workshops
-.events
+.events, .tools
   display: flex
   flex-wrap: wrap
   justify-content: space-between
   width: 100%
   margin-bottom: -2%
-  .event
+  .event, .tool
     margin-bottom: 2%
-    .event-thumb
+    .event-thumb, .tool-thumb
       background-size: cover
       width: 100%
+    .download
+      color: $dark-blue      
     p
       display: flex
       flex-direction: column
@@ -174,7 +182,7 @@
     line-height: 30px
     list-style-type: none
     -webkit-padding-start: 0
-    padding-inline-start: 0    
+    padding-inline-start: 0
     margin-bottom: $block-spacer
 
 .downloads

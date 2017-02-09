@@ -13,9 +13,9 @@
   .blog p img {
     width: 100%; }
 
-  .events .event {
+  .events .event, .events .tool, .tools .event, .tools .tool {
     width: 100%; }
-    .events .event .event-thumb {
+    .events .event .event-thumb, .events .event .tool-thumb, .events .tool .event-thumb, .events .tool .tool-thumb, .tools .event .event-thumb, .tools .event .tool-thumb, .tools .tool .event-thumb, .tools .tool .tool-thumb {
       height: 230px; }
 
   .hero .subhero {
@@ -93,9 +93,9 @@
     transform: translate(-17%, 0);
     margin: 50px 0; }
 
-  .events .event {
+  .events .event, .events .tool, .tools .event, .tools .tool {
     width: 49%; }
-    .events .event .event-thumb {
+    .events .event .event-thumb, .events .event .tool-thumb, .events .tool .event-thumb, .events .tool .tool-thumb, .tools .event .event-thumb, .tools .event .tool-thumb, .tools .tool .event-thumb, .tools .tool .tool-thumb {
       height: 330px; }
 
   .hero .subhero {
@@ -641,6 +641,12 @@ footer {
   justify-content: space-between;
   font-weight: 600; }
 
+.bold {
+  font-weight: bold;
+  color: #282930 !important;
+  margin-bottom: 0;
+  margin-top: 30px; }
+
 .quotes {
   width: 100%;
   margin: 50px auto; }
@@ -753,18 +759,20 @@ footer {
   .blog .openness p {
     color: #F3F3F3; }
 
-.events {
+.events, .tools {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   margin-bottom: -2%; }
-  .events .event {
+  .events .event, .events .tool, .tools .event, .tools .tool {
     margin-bottom: 2%; }
-    .events .event .event-thumb {
+    .events .event .event-thumb, .events .event .tool-thumb, .events .tool .event-thumb, .events .tool .tool-thumb, .tools .event .event-thumb, .tools .event .tool-thumb, .tools .tool .event-thumb, .tools .tool .tool-thumb {
       background-size: cover;
       width: 100%; }
-    .events .event p {
+    .events .event .download, .events .tool .download, .tools .event .download, .tools .tool .download {
+      color: #282930; }
+    .events .event p, .events .tool p, .tools .event p, .tools .tool p {
       display: flex;
       flex-direction: column;
       align-items: center;

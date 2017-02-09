@@ -63,10 +63,10 @@ $mobile-break:  600px;
       width: 100%;
     }
   }
-  .events {
-    .event {
+  .events, .tools {
+    .event, .tool {
       width: 100%;
-      .event-thumb {
+      .event-thumb, .tool-thumb {
         height: 230px;
       }
     }
@@ -166,10 +166,10 @@ $mobile-break:  600px;
       margin: $block-spacer 0
     }
   }
-  .events {
-    .event {
+  .events, .tools {
+    .event, .tool {
       width: 49%;
-      .event-thumb {
+      .event-thumb, .tool-thumb {
         height: 330px;
       }
     }
