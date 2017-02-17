@@ -1,3 +1,7 @@
+.large-image
+  svg
+    height: 60px !important
+
 .hero
   width: 100%
   .subhero
@@ -27,6 +31,12 @@
   justify-content: space-between
   font-weight: 600
 
+.bold
+  font-weight: bold
+  color: $dark-blue !important
+  margin-bottom: 0
+  margin-top: 30px
+
 .quotes
   width: 100%
   margin: $block-spacer auto
@@ -42,6 +52,10 @@
       break-inside: avoid
       p, h2, span, textarea
         color: $light-gray
+      h2
+        font-weight: $regular-weight
+      p
+        font-weight: $light-weight
       .epithet
         margin-top: -8px
       .line-divider
@@ -103,3 +117,90 @@
   p, ol
     line-height: 31px
     color: $dark-gray
+  h2
+    color: $dark-blue
+
+//case studies
+.cases
+  margin-bottom: $block-spacer
+.blog
+  h3
+    color: $dark-blue
+    margin-top: $block-spacer
+  p
+    margin: $block-spacer*0.3 auto
+    line-height: 31px
+    color: $dark-gray
+  p img
+    margin: $block-spacer 0
+  .openness
+    background: $dark-blue
+    transition: background 0.3s ease
+    border-radius: 3px
+    padding: 10px 27px
+    margin: 0 auto
+    margin-top: $block-spacer
+    h2
+      color: $light-gray
+      display: flex
+      &:before
+        background-image: url('../assets/open-source.svg')
+        background-size: 34px 33px
+        width: 34px
+        height: 33px
+        content: ""
+        margin-right: 10px
+    p
+      color: $light-gray
+
+// workshops
+.events, .tools
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  width: 100%
+  margin-bottom: -2%
+  .event, .tool
+    margin-bottom: 2%
+    .event-thumb, .tool-thumb
+      background-size: cover
+      width: 100%
+    .download
+      color: $dark-blue      
+    p
+      display: flex
+      flex-direction: column
+      align-items: center
+      color: $dark-gray
+      line-height: 1.75
+.workshops-info
+  ul
+    color: $dark-gray
+    font-size: $p-size
+    font-family: $open-sans
+    font-weight: $regular-weight
+    line-height: 30px
+    list-style-type: none
+    -webkit-padding-start: 0
+    padding-inline-start: 0
+    margin-bottom: $block-spacer
+
+.downloads
+  margin-bottom: $block-spacer
+  a
+    font-size: $p-size
+    font-family: $open-sans
+    font-weight: $regular-weight
+    color: $dark-blue
+    display: block
+    margin-bottom: 10px
+    span
+      border-bottom: 2px solid $dark-blue
+
+.noun
+  display: block
+  margin-bottom: $block-spacer*0.5
+  font-size: $p-size*0.8
+  font-family: $open-sans
+  font-weight: $regular-weight
+  color: $dark-gray

@@ -1,0 +1,15 @@
+<div class="cases">
+  {% for case in site.case-studies %}
+    <div class="case blog">
+      <h2>{{ case.title }}</h2>
+      {{ case.content }}
+      <div class="openness">
+        <h2>Level of Openness</h2>
+        <p>{{ case.openness }}</p>
+      </div>
+    </div>
+    {% if forloop.last == false %}
+      <div class="big-line-divider"></div>
+    {% endif %}
+  {% endfor %}
+</div>

@@ -11,12 +11,14 @@ $dark-blue: #282930;
 
 //fonts
 $open-sans: 'Open Sans', sans-serif;
-$regular-weight: 300;
+$light-weight: 300;
+$regular-weight: 400;
 $bold-weight: 600;
 
 // sizes
 $h1-size: 48px;
 $h2-size: 28px;
+$h3-size: 21px;
 $p-size: 18px;
 $small-size: 15px;
 
@@ -55,6 +57,19 @@ $mobile-break:  600px;
     margin: 15px 0;
     font-size: 42px;
     line-height: 55px;
+  }
+  .blog {
+    p img {
+      width: 100%;
+    }
+  }
+  .events, .tools {
+    .event, .tool {
+      width: 100%;
+      .event-thumb, .tool-thumb {
+        height: 230px;
+      }
+    }
   }
   .hero {
     .subhero {
@@ -127,6 +142,38 @@ $mobile-break:  600px;
     font-size: $h1-size;
     line-height: 55px;
   }
+  .blog {
+    .openness {
+      width: 66%;
+    }
+    > h2, > h3, > p {
+      width: 66%;
+      margin: 0 auto;
+    }
+    h3 {
+      color: $dark-blue;
+      margin-top: $block-spacer;
+    }
+    p {
+      margin: $block-spacer*0.3 auto;
+      line-height: 31px;
+      color: $dark-gray;
+    }
+    p img {
+      //workaround because markdown wraps img in p tags
+      width: 152%;
+      transform: translate(-17%, 0);
+      margin: $block-spacer 0
+    }
+  }
+  .events, .tools {
+    .event, .tool {
+      width: 49%;
+      .event-thumb, .tool-thumb {
+        height: 330px;
+      }
+    }
+  }
   .hero {
     .subhero {
       width: 66%;
@@ -141,6 +188,7 @@ $mobile-break:  600px;
   }
   #triangle-hero {
     justify-content: center;
+    align-items: center;
     min-height: 90vh;
     .subtitle {
       width: 66%;
@@ -176,6 +224,8 @@ $mobile-break:  600px;
   .quotes {
     column-count: 2;
     column-gap: 10px;
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
   }
   .tags {
     width: 25%;
@@ -183,6 +233,12 @@ $mobile-break:  600px;
   .questions {
     width: 66%;
     padding-top: 60px;
+  }
+  .workshops-info {
+    ul {
+      column-count: 3;
+      -moz-column-count: 3;
+    }
   }
 }
 

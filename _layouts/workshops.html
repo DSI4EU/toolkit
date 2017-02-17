@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="hero centered-text large-image">
+  <img class="svg" src="{{ page.imageURL }}" alt="humans">
+  <h1 class="post-title dark-color">{{ page.title }}</h1>
+  <div class="subtitle subhero">{{ page.subtitle }}</div>
+</div>
+<div class="big-line-divider"></div>
+<div class="blog">  
+  {{ content }}
+</div>
+<div class="big-line-divider"></div>
+<div class="centered-text block">
+  <h2 class="dark-color">{{ page.second-title }}</h2>
+</div>
+{% include events.html %}
+<div class="big-line-divider"></div>
+<div class="scale-content workshops-info">
+  <h2>{{ page.third-title }}</h2>
+  <ul class="participants">
+    {% for participant in page.participants %}
+      <li>{{ participant }}</li>
+    {% endfor %}
+  </ul>
+  <h2>{{ page.fourth-title }}</h2>
+  <div class="downloads">
+    {% for link in page.downloads %}
+      {% if forloop.first == true %}
+          <a href="{{ link.href }}"><span>{{ link.text }}</span></a>
+          <p>Or download them individually:</p>
+      {% else %}
+          <a href="{{ link.href }}" target="_blank"><span>{{ link.text }}</span></a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <a class="noun" href="https://thenounproject.com/term/collective-thinking/480262/" target="_blank">Header icon by Artem Kovyazin</a>
+</div>

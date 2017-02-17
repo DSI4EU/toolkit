@@ -10,6 +10,14 @@
     font-size: 42px;
     line-height: 55px; }
 
+  .blog p img {
+    width: 100%; }
+
+  .events .event, .events .tool, .tools .event, .tools .tool {
+    width: 100%; }
+    .events .event .event-thumb, .events .event .tool-thumb, .events .tool .event-thumb, .events .tool .tool-thumb, .tools .event .event-thumb, .tools .event .tool-thumb, .tools .tool .event-thumb, .tools .tool .tool-thumb {
+      height: 230px; }
+
   .hero .subhero {
     width: 100% !important; }
   .hero svg {
@@ -68,6 +76,28 @@
     font-size: 48px;
     line-height: 55px; }
 
+  .blog .openness {
+    width: 66%; }
+  .blog > h2, .blog > h3, .blog > p {
+    width: 66%;
+    margin: 0 auto; }
+  .blog h3 {
+    color: #282930;
+    margin-top: 50px; }
+  .blog p {
+    margin: 15px auto;
+    line-height: 31px;
+    color: #797979; }
+  .blog p img {
+    width: 152%;
+    transform: translate(-17%, 0);
+    margin: 50px 0; }
+
+  .events .event, .events .tool, .tools .event, .tools .tool {
+    width: 49%; }
+    .events .event .event-thumb, .events .event .tool-thumb, .events .tool .event-thumb, .events .tool .tool-thumb, .tools .event .event-thumb, .tools .event .tool-thumb, .tools .tool .event-thumb, .tools .tool .tool-thumb {
+      height: 330px; }
+
   .hero .subhero {
     width: 66%; }
 
@@ -80,6 +110,7 @@
 
   #triangle-hero {
     justify-content: center;
+    align-items: center;
     min-height: 90vh; }
     #triangle-hero .subtitle {
       width: 66%; }
@@ -107,14 +138,20 @@
 
   .quotes {
     column-count: 2;
-    column-gap: 10px; }
+    column-gap: 10px;
+    -moz-column-count: 2;
+    -moz-column-gap: 10px; }
 
   .tags {
     width: 25%; }
 
   .questions {
     width: 66%;
-    padding-top: 60px; } }
+    padding-top: 60px; }
+
+  .workshops-info ul {
+    column-count: 3;
+    -moz-column-count: 3; } }
 html, body {
   height: 100%; }
 
@@ -129,18 +166,24 @@ a {
 
 h1 {
   font-family: "Open Sans", sans-serif;
-  font-weight: 300; }
+  font-weight: 400; }
 
 h2 {
   font-size: 28px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 31px; }
+
+h3 {
+  font-size: 21px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
   line-height: 31px; }
 
 p {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300; }
+  font-weight: 400; }
   p a {
     border-bottom: 2px solid; }
 
@@ -151,7 +194,7 @@ ol {
   padding-left: 1em;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300; }
+  font-weight: 400; }
 
 textarea {
   resize: none;
@@ -167,11 +210,11 @@ textarea {
 .small {
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .subtitle {
   font-family: "Open Sans", sans-serif;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .fade {
   opacity: 0.1 !important; }
@@ -213,6 +256,9 @@ button {
 
 .light {
   color: #797979; }
+
+.dark-color {
+  color: #282930; }
 
 .dark {
   background: #282930; }
@@ -345,7 +391,7 @@ button {
     height: 100%;
     opacity: 0.8;
     z-index: -2;
-    background: url("../assets/workshop.jpg");
+    background: url("../assets/pics/workshop.jpg");
     background-size: cover;
     background-position: 0; }
   .big-picture:after {
@@ -449,7 +495,7 @@ footer {
   align-content: center; }
   footer #footer-wave {
     position: absolute;
-    top: -12px;
+    top: -11px;
     background: url("../assets/dark-wave.svg");
     width: 100%;
     height: 12px; }
@@ -459,7 +505,7 @@ footer {
     text-align: center;
     color: #F3F3F3;
     font-family: "Open Sans", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px; }
   footer #license {
     margin: 10px auto;
@@ -518,7 +564,7 @@ footer {
     transform: translateY(-50%);
     font-size: 48px;
     font-family: "Open Sans", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center; }
   .overlay ul {
     list-style: none;
@@ -565,6 +611,9 @@ footer {
     opacity: 0; }
   100% {
     opacity: 1; } }
+.large-image svg {
+  height: 60px !important; }
+
 .hero {
   width: 100%; }
   .hero .subhero {
@@ -592,6 +641,12 @@ footer {
   justify-content: space-between;
   font-weight: 600; }
 
+.bold {
+  font-weight: bold;
+  color: #282930 !important;
+  margin-bottom: 0;
+  margin-top: 30px; }
+
 .quotes {
   width: 100%;
   margin: 50px auto; }
@@ -607,6 +662,10 @@ footer {
       break-inside: avoid; }
       .quotes .container .quote p, .quotes .container .quote h2, .quotes .container .quote span, .quotes .container .quote textarea {
         color: #F3F3F3; }
+      .quotes .container .quote h2 {
+        font-weight: 400; }
+      .quotes .container .quote p {
+        font-weight: 300; }
       .quotes .container .quote .epithet {
         margin-top: -8px; }
       .quotes .container .quote .line-divider {
@@ -626,7 +685,7 @@ footer {
           height: 1.5em;
           font-size: 18px;
           font-family: "Open Sans", sans-serif;
-          font-weight: 300;
+          font-weight: 400;
           border-bottom: 2px solid #F3F3F3;
           margin-left: 7px;
           line-height: 28px; }
@@ -664,4 +723,89 @@ footer {
 
 .scale-content p, .scale-content ol {
   line-height: 31px;
+  color: #797979; }
+.scale-content h2 {
+  color: #282930; }
+
+.cases {
+  margin-bottom: 50px; }
+
+.blog h3 {
+  color: #282930;
+  margin-top: 50px; }
+.blog p {
+  margin: 15px auto;
+  line-height: 31px;
+  color: #797979; }
+.blog p img {
+  margin: 50px 0; }
+.blog .openness {
+  background: #282930;
+  transition: background 0.3s ease;
+  border-radius: 3px;
+  padding: 10px 27px;
+  margin: 0 auto;
+  margin-top: 50px; }
+  .blog .openness h2 {
+    color: #F3F3F3;
+    display: flex; }
+    .blog .openness h2:before {
+      background-image: url("../assets/open-source.svg");
+      background-size: 34px 33px;
+      width: 34px;
+      height: 33px;
+      content: "";
+      margin-right: 10px; }
+  .blog .openness p {
+    color: #F3F3F3; }
+
+.events, .tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: -2%; }
+  .events .event, .events .tool, .tools .event, .tools .tool {
+    margin-bottom: 2%; }
+    .events .event .event-thumb, .events .event .tool-thumb, .events .tool .event-thumb, .events .tool .tool-thumb, .tools .event .event-thumb, .tools .event .tool-thumb, .tools .tool .event-thumb, .tools .tool .tool-thumb {
+      background-size: cover;
+      width: 100%; }
+    .events .event .download, .events .tool .download, .tools .event .download, .tools .tool .download {
+      color: #282930; }
+    .events .event p, .events .tool p, .tools .event p, .tools .tool p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #797979;
+      line-height: 1.75; }
+
+.workshops-info ul {
+  color: #797979;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  list-style-type: none;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  margin-bottom: 50px; }
+
+.downloads {
+  margin-bottom: 50px; }
+  .downloads a {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #282930;
+    display: block;
+    margin-bottom: 10px; }
+    .downloads a span {
+      border-bottom: 2px solid #282930; }
+
+.noun {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 14.4px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   color: #797979; }
