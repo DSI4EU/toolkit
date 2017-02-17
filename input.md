@@ -7,7 +7,7 @@ subtitle: You learned some lessons while implementing your digital social innova
 questions:
 - text: 1. What’s your project about?
   placeholder: I make solar panels
-- text: 2. Something went or is going well in you project.
+- text: 2. Something went or is going well in your project.
   description: For sure you are doing it right and positive external factors are also influencing the process... tell everyone what part of your project is working good.
   placeholder: My community is very involved
 - text: 3. Problem solving tactics are fundamental to scale.
