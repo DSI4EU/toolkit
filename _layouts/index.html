@@ -8,27 +8,46 @@
       <div class="content">
         <h1 class="post-title">{{ page.hero }}</h1>
         <div class="subtitle ">{{ page.subtitle }}</div>
-        <a href="#page-content">
+        <a href="#">
           <button>{{ page.hero-button }}</button>
         </a>
+        <p style="opacity:0.5"><a href="#page-content">Explore the toolkit</a></p>
       </div>
     </div>
     <div id="page-content">
       <div class="double-column" id="high-margin">
         <section>
-          <img class="svg" src="{{ page.left-image }}" alt="dsi scale">
-          <h2 class="dark-color">{{ page.left-title }}</h2>
-          <p class="light">{{ page.left-p }}</p>
+          <img class="svg" src="{{ page.left-image1 }}" alt="dsi scale">
+          <h2 class="dark-color">{{ page.left-title1 }}</h2>
+          <p class="light">{{ page.left-p1 }}</p>
           <a href="{{ site.baseurl }}/scale">
-            <button>{{ page.left-button }}</button>
+            <button>{{ page.left-button1 }}</button>
           </a>
         </section>
         <section>
-          <img class="svg" src="{{ page.right-image }}" alt="peer knowledge">
-          <h2 class="dark-color">{{ page.right-title }}</h2>
-          <p class="light">{{ page.right-p }}</p>
+          <img class="svg" src="{{ page.right-image1 }}" alt="peer knowledge">
+          <h2 class="dark-color">{{ page.right-title1 }}</h2>
+          <p class="light">{{ page.right-p1 }}</p>
           <a href="{{ site.baseurl }}/knowledge">
-            <button>{{ page.right-button }}</button>
+            <button>{{ page.right-button1 }}</button>
+          </a>
+        </section>
+      </div>
+      <div class="double-column" id="high-margin">
+        <section>
+          <img class="svg" src="{{ page.left-image2 }}" alt="dsi scale">
+          <h2 class="dark-color">{{ page.left-title2 }}</h2>
+          <p class="light">{{ page.left-p2 }}</p>
+          <a href="{{ site.baseurl }}/scale">
+            <button>{{ page.left-button2 }}</button>
+          </a>
+        </section>
+        <section>
+          <img class="svg" src="{{ page.right-image2 }}" alt="peer knowledge">
+          <h2 class="dark-color">{{ page.right-title2 }}</h2>
+          <p class="light">{{ page.right-p2 }}</p>
+          <a href="{{ site.baseurl }}/knowledge">
+            <button>{{ page.right-button2 }}</button>
           </a>
         </section>
       </div>
@@ -55,6 +74,9 @@
         </p>
       </section>
     </div>
+    <a href="/workshops">
+      <button class="light-button">All the workshops</button>
+    </a>
   </div>
   <div class="light-footer">
     {% include footer.html %}

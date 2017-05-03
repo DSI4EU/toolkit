@@ -1,7 +1,7 @@
 ---
-layout: other-tools
-permalink: /other-tools/
-title:  Other tools.
+layout: resources-tools
+permalink: /resources-tools/
+title:  Resources and tools.
 imageURL: "../assets/other-tools.svg"
 subtitle: In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew. Now hands
 second-title: More resources

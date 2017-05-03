@@ -5,19 +5,29 @@ title: DSI Toolkit
 # HERO #
 hero: Digital social innovation <br> &#35;toolkit
 subtitle: The DSI Toolkit is a collaboratively developed toolkit that helps projects to scale in a sustainable way, generating a better impact.
-hero-button: Explore the toolkit
+hero-button: Download PDF
 
 # COLUMNS #
-# L #
-left-image: "assets/scale.svg"
-left-title: The DSI scale
-left-p: Helps to assess the DSI growth considering sharing, openness and societal good.
-left-button: Build the DSI scale
-# R #
-right-image: "assets/peer.svg"
-right-title: Peer knowledge
-right-p: Wanna help other digital social innovators to scale? Share your knowledge!
-right-button: Contribute
+# L1 #
+left-image1: "assets/scale.svg"
+left-title1: The DSI scale
+left-p1: Helps to assess the DSI growth considering sharing, openness and societal good.
+left-button1: Build the DSI scale
+# R1 #
+right-image1: "assets/peer.svg"
+right-title1: Peer knowledge
+right-p1: Wanna help other digital social innovators to scale? Share your knowledge!
+right-button1: Contribute
+# L2 #
+left-image2: "assets/scale.svg"
+left-title2: The DSI scale
+left-p2: Helps to assess the DSI growth considering sharing, openness and societal good.
+left-button2: Build the DSI scale
+# R2 #
+right-image2: "assets/peer.svg"
+right-title2: Peer knowledge
+right-p2: Wanna help other digital social innovators to scale? Share your knowledge!
+right-button2: Contribute
 
 # BIG PICTURE #
 picture-title: Workshops

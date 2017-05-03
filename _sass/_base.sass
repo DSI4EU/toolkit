@@ -1,4 +1,7 @@
 // GLOBALS
+*
+  // border: 1px solid black
+
 html, body
   height: 100%
 
@@ -83,6 +86,14 @@ button
   &:hover
     padding: 5px 30px
 
+.light-button
+  border-color: $light-gray
+  color: $light-gray
+  display: flex
+  margin: 0 auto
+  align-items: center
+  padding: 5px 27px
+
 .dark-button
   border-color: $dark-blue
   color: $dark-blue
@@ -134,6 +145,10 @@ button
 
 .slim-screen-hero
   padding: 123px 0 50px 0
+
+.hero svg *
+  fill: $dark-blue
+
 
 // pace line loader
 .pace
