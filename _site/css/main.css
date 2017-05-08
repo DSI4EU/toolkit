@@ -83,7 +83,7 @@
     width: 93%; }
 
   footer #content {
-    width: 93%; }
+    width: 66%; }
 
   .players {
     width: 90px;
@@ -382,6 +382,9 @@ button {
   20% {
     transform: scaleY(1);
     -webkit-transform: scaleY(1); } }
+.st2 {
+  fill: #1DC9A0 !important; }
+
 #triangle-hero {
   position: absolute;
   left: 0;
@@ -418,6 +421,8 @@ button {
   position: relative;
   justify-content: center;
   color: #F3F3F3 !important; }
+  .big-picture .content {
+    margin-bottom: 30px; }
   .big-picture:before {
     content: "";
     position: absolute;
@@ -532,7 +537,7 @@ footer {
     height: 12px; }
   footer #content {
     display: flex;
-    max-width: 1200px;
+    max-width: 66%;
     margin: 0 auto; }
     footer #content .players {
       display: flex; }
@@ -794,13 +799,6 @@ footer {
   .blog .openness h2 {
     color: #F3F3F3;
     display: flex; }
-    .blog .openness h2:before {
-      background-image: url("../assets/open-source.svg");
-      background-size: 34px 33px;
-      width: 34px;
-      height: 33px;
-      content: "";
-      margin-right: 10px; }
   .blog .openness p {
     color: #F3F3F3; }
 

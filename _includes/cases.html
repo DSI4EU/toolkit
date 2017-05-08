@@ -4,8 +4,8 @@
       <h2>{{ case.title }}</h2>
       {{ case.content }}
       <div class="openness">
-        <h2>Level of Openness</h2>
-        <p>{{ case.openness }}</p>
+        <h2>{{ case.card-title }}</h2>
+        <p>{{ case.card-text }}</p>
       </div>
     </div>
     {% if forloop.last == false %}
