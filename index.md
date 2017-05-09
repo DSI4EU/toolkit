@@ -6,6 +6,8 @@ title: DSI Toolkit
 hero: Digital social innovation <br> &#35;toolkit
 subtitle: The DSI Toolkit is a collaboratively developed toolkit that helps projects to scale in a sustainable way, generating a better impact.
 hero-button: Download PDF
+#the file should be in /assets/downloads
+hero-button-filename: 170503_DSI4EU.pdf
 
 # COLUMNS #
 # L1 #
@@ -14,15 +16,15 @@ left-title1: The DSI scale
 left-p1: Helps to assess the DSI growth considering sharing, openness and societal good.
 left-button1: Build the DSI scale
 # R1 #
-right-image1: "assets/peer.svg"
-right-title1: Peer knowledge
-right-p1: Wanna help other digital social innovators to scale? Share your knowledge!
-right-button1: Contribute
+right-image1: "assets/cases1.svg"
+right-title1: Case studies
+right-p1: Gluten-free chartreuse offal fashion axe, taxidermy pitchfork health goth PBR&B.
+right-button1: Case studies
 # L2 #
 left-image2: "assets/scale.svg"
-left-title2: The DSI scale
-left-p2: Helps to assess the DSI growth considering sharing, openness and societal good.
-left-button2: Build the DSI scale
+left-title2: Resources and tools
+left-p2: Gluten-free chartreuse offal fashion axe, taxidermy pitchfork health goth PBR&B.
+left-button2: Resources
 # R2 #
 right-image2: "assets/peer.svg"
 right-title2: Peer knowledge
