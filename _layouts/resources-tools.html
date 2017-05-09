@@ -16,7 +16,7 @@ layout: default
 <div class="scale-content workshops-info">
   <h2> {{ page.second-title }} </h2>
   <div class="downloads">
-    <p class="bold">{{ page.section-one }}</p>
+    <p class="bold" style="margin-top: 0 !important;">{{ page.section-one }}</p>
     {% for link in page.section-one-links %}
       <a href="{{ link.href }}" target="_blank"><span>{{ link.text }}</span></a>
     {% endfor %}

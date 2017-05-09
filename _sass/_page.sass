@@ -162,17 +162,20 @@
   margin-bottom: -2%
   .event, .tool
     margin-bottom: 2%
-    .event-thumb, .tool-thumb
-      background-size: cover
-      width: 100%
-    .download
-      color: $dark-blue
+    background: $teal
     p
       display: flex
       flex-direction: column
-      align-items: center
-      color: $dark-gray
+      align-items: left
+      color: $light-gray
       line-height: 1.75
+      padding: 30px
+      margin: 0
+      font-size: 25px
+
+    .download
+      margin-top: 15px
+      font-size: $p-size
 .workshops-info
   ul
     color: $dark-gray
@@ -187,6 +190,7 @@
 
 .downloads
   margin-bottom: $block-spacer
+  column-count: 2
   a
     font-size: $p-size
     font-family: $open-sans
@@ -204,3 +208,22 @@
   font-family: $open-sans
   font-weight: $regular-weight
   color: $dark-gray
+
+#about
+  .triplets
+    display: flex
+    width: 100%
+    justify-content: center
+    margin-top: 50px
+
+    section
+      width: 25%
+      margin: 0 20px
+      text-align: left
+
+      svg
+        width: 120px
+
+      p
+        font-size: $small-size
+        text-align: left

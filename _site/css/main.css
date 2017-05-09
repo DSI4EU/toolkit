@@ -809,18 +809,20 @@ footer {
   width: 100%;
   margin-bottom: -2%; }
   .events .event, .events .tool, .tools .event, .tools .tool {
-    margin-bottom: 2%; }
-    .events .event .event-thumb, .events .event .tool-thumb, .events .tool .event-thumb, .events .tool .tool-thumb, .tools .event .event-thumb, .tools .event .tool-thumb, .tools .tool .event-thumb, .tools .tool .tool-thumb {
-      background-size: cover;
-      width: 100%; }
-    .events .event .download, .events .tool .download, .tools .event .download, .tools .tool .download {
-      color: #282930; }
+    margin-bottom: 2%;
+    background: #1DC9A0; }
     .events .event p, .events .tool p, .tools .event p, .tools .tool p {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      color: #797979;
-      line-height: 1.75; }
+      align-items: left;
+      color: #F3F3F3;
+      line-height: 1.75;
+      padding: 30px;
+      margin: 0;
+      font-size: 25px; }
+    .events .event .download, .events .tool .download, .tools .event .download, .tools .tool .download {
+      margin-top: 15px;
+      font-size: 18px; }
 
 .workshops-info ul {
   color: #797979;
@@ -834,7 +836,8 @@ footer {
   margin-bottom: 50px; }
 
 .downloads {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  column-count: 2; }
   .downloads a {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
@@ -852,3 +855,18 @@ footer {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #797979; }
+
+#about .triplets {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px; }
+  #about .triplets section {
+    width: 25%;
+    margin: 0 20px;
+    text-align: left; }
+    #about .triplets section svg {
+      width: 120px; }
+    #about .triplets section p {
+      font-size: 15px;
+      text-align: left; }

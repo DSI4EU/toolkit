@@ -21,7 +21,7 @@ right-title1: Case studies
 right-p1: Gluten-free chartreuse offal fashion axe, taxidermy pitchfork health goth PBR&B.
 right-button1: Case studies
 # L2 #
-left-image2: "assets/scale.svg"
+left-image2: "assets/other-tools.svg"
 left-title2: Resources and tools
 left-p2: Gluten-free chartreuse offal fashion axe, taxidermy pitchfork health goth PBR&B.
 left-button2: Resources

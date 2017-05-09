@@ -1,11 +1,14 @@
 <div class="tools">
   {% for tool in site.tools %}
     <div class="tool">
-      <div class="tool-thumb" style="background-image:url(../assets/pics/{{tool.image-filename}})"></div>
       <p>
         <span>{{ tool.line1 }}</span>
         <span>{{ tool.line2 }}</span>
-        <a class="download" href="../assets/downloads/{{tool.download-filename}}">Download</a>
+          <span class="download">
+            <a href="../assets/downloads/{{tool.download-filename}}">
+              Download
+            </a>
+          </span>
       </p>
     </div>
   {% endfor %}
