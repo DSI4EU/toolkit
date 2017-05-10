@@ -33,7 +33,7 @@ right-button2: Contribute
 
 # BIG PICTURE #
 picture-title: Workshops
-picture-subtitle: Workshops, events and meetups are organized all around Europe to built a DSI community-generated knowledge and promote social sustainable growth. Starting in April 2016, the experimental training programmes to engage one of the target audiences of DSI4EU (makers and members of the open hardwareand design community) in discussing and exploring strategies to scale their endeavours by sharing best practices and sharing scalability strategies.
+picture-subtitle: Workshops, events and meet-ups are organized all around Europe to built a DSI community-generated knowledge and promote social sustainable growth. The experimental training programme engaged digital social innovators in discussing and exploring strategies to scale their endeavours by sharing best practices and problem-solving tactics.
 
 # WORKSHOPS #
 left-ws: Latest workshop
