@@ -1,21 +1,15 @@
 ---
-title: Open drop
-card-title: Level of openness
-card-text: So strongly and metaphysically did I conceive of my situation then, that while earnestly watching his motions, I seemed distinctly to perceive that my own individuality was now merged in a joint stock company of two; that my free will had received a mortal wound; and that another's mistake or misfortune might plunge innocent me into unmerited disaster and death. Therefore, I saw that here was a sort of interregnum in Providence; for its even-handed equity never could have so gross an injustice.
+title: OpenDrop
+card-title: Key DSI features
+card-text: Open Drop only uses standard and widely available components, materials, and production processes. The assembling does not rely on parts that are not available to individual customers or processes that require expensive setup costs. The fabrication is also accessible&#58; the design files and software required to operate the hardware are released under open licenses. The development is shared and facilitated by the project initiators through the presentation in public events, the involvement of different communities and initiatives, the organization of interdisciplinary workshops. 
 ---
 
-The DSI Scale is an open source tool built for and by the community of digital social innovators. It helps to assess the DSI growth considering values as the knowledge sharing, the technological openness, the societal good.
+[OpenDrop](http://www.gaudi.ch/OpenDrop/) is an open hardware-based design for microfluidics analysis.
+Microfluidics is the study of how fluids behave and can be controlled at
+the very smallest levels.
 
 ![open drop](../assets/pics/open-drop.png)
+The device uses recently-developed technology called “electro-wetting” to control small droplets of liquids. Using this technology, users can carry out digital biology experiments in the lab and in their own home. While the uses of the OpenDrop are currently quite specific and niche, its significance lies in the principles of openness, accessibility and collaboration which lie behind it. Inspired by other equipment like the DropBot and Microdrop software, OpenDrop was designed with a DIY and low-cost approach, and is part of a larger ecosystem of digital biology initiatives whose aim is to make digital biology and lab automation accessible to people. It was designed in accordance with the best practices for Open-Source Hardware (OSHWA) and the [GOSH (Global Open Science Hardware) Manifesto](http://openhardware.science/gosh-manifesto/).
 
-The DSI Scale includes a set of indicators that could help you and policy makers to assess your DSI projects in order to reach a better impact. The scale is not predefined: you propose the meaning of each indicator values ranging from 0 to 4.
-
-How to contribute:
-1 - Tell us your name or affiliation (optional)
-2 - Chose  more indicator
-3 - Read the information to understand what it should assess
-4 - Add your definition of the values ranging from 0 to 4 (0=low; 4=high)
-
-### Key DSI Features
-
-Open Drop only uses standard and widely-available components, materials, and production processes. The assembling does not rely on parts that aren’t available to individual customers or processes that require expensive setup costs. The fabrication is also accessible: the design files and software required to operate the hardware are released under open licenses.
+The development process is continually shared and facilitated by the project leaders through presentations at public events, through involving different communities and initiatives, and through organizing interdisciplinary workshops. Initiated and developed in Switzerland, the project is currently at its second release and has been developed through the collaborative efforts of an international network of organisations and communities of biohackers, scientists and artists. 
+Thanks to this collaboration, its applications now spread beyond science to fields such as art, music, games and education. The project was initiated by [Urs Gaudenz (Gaudilabs)](http://www.gaudi.ch/GaudiLabs/) and developed by several communities including [hackteria | open source biological art](http://www.hackteria.org/), BioFlux and digi.bio.
