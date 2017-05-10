@@ -18,13 +18,13 @@ left-button1: Build the DSI scale
 # R1 #
 right-image1: "assets/cases1.svg"
 right-title1: Case studies
-right-p1: Gluten-free chartreuse offal fashion axe, taxidermy pitchfork health goth PBR&B.
-right-button1: Case studies
+right-p1: Six projects and initiatives that teach key DSI lessons.
+right-button1: Read more
 # L2 #
 left-image2: "assets/other-tools.svg"
 left-title2: Resources and tools
-left-p2: Gluten-free chartreuse offal fashion axe, taxidermy pitchfork health goth PBR&B.
-left-button2: Resources
+left-p2: A set of references that help DSI and open hardware projects grow healthy and strong.
+left-button2: Learn more
 # R2 #
 right-image2: "assets/peer.svg"
 right-title2: Peer knowledge
@@ -33,7 +33,7 @@ right-button2: Contribute
 
 # BIG PICTURE #
 picture-title: Workshops
-picture-subtitle: Workshops, events and meetups are organized all around Europe to built a DSI community-generated knowledge and promote social sustainable growth.
+picture-subtitle: Workshops, events and meetups are organized all around Europe to built a DSI community-generated knowledge and promote social sustainable growth. Starting in April 2016, the experimental training programmes to engage one of the target audiences of DSI4EU (makers and members of the open hardwareand design community) in discussing and exploring strategies to scale their endeavours by sharing best practices and sharing scalability strategies.
 
 # WORKSHOPS #
 left-ws: Latest workshop

@@ -3,8 +3,8 @@ title: Digital Social Innovation Toolkit
 email: serenacangiano@gmail.com
 description: The DSI Toolkit is a collaboratively developed toolkit that helps projects to scale in a sustainable way, generating a better impact.
 permalink: /:title/
-baseurl: "/toolkit" # the subpath of your site, e.g. /blog
-url: "https://dsi4eu.github.io/" # the base hostname & protocol for your site
+#baseurl: "/toolkit" # the subpath of your site, e.g. /blog
+#url: "https://dsi4eu.github.io/" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 # github_username:  jekyll
 #
