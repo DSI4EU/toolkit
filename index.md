@@ -12,9 +12,9 @@ hero-button-filename: DSIToolkit-complete.pdf
 # COLUMNS #
 # L1 #
 left-image1: "assets/scale.svg"
-left-title1: The DSI scale
+left-title1: The DSI Scale
 left-p1: Helps to assess the DSI growth considering sharing, openness and societal good.
-left-button1: Build the DSI scale
+left-button1: Build the DSI Scale
 # R1 #
 right-image1: "assets/cases1.svg"
 right-title1: Case studies
