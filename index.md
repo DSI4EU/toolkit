@@ -7,7 +7,7 @@ hero: Digital social innovation <br> &#35;toolkit
 subtitle: The DSI Toolkit is a collaboratively developed toolkit that helps projects to scale in a sustainable way, generating a better impact.
 hero-button: Download PDF
 #the file should be in /assets/downloads
-hero-button-filename: 170510_DSI4EU.pdf
+hero-button-filename: DSIToolkit-complete.pdf
 
 # COLUMNS #
 # L1 #
