@@ -2,6 +2,13 @@
   #all {
     width: 91%; }
 
+  .triplets {
+    display: block; }
+
+  .triplets section {
+    width: 100%;
+    margin-bottom: 50px; }
+
   footer #content {
     width: 91%;
     flex-direction: column;
@@ -15,6 +22,9 @@
     justify-content: space-between;
     align-items: center;
     height: 100px; }
+
+  .players a {
+    width: 70px; }
 
   header {
     padding: 23px 0 28px 0; }
@@ -82,6 +92,13 @@
   #all {
     width: 93%; }
 
+  .triplets {
+    display: flex; }
+
+  .triplets section {
+    width: 25%;
+    margin: 0 20px; }
+
   footer #content {
     width: 66%; }
 
@@ -92,6 +109,9 @@
     flex-direction: column;
     align-items: center;
     height: 200px; }
+
+  .players a {
+    width: 90px; }
 
   header {
     padding: 50px 0 55px 0; }
@@ -538,11 +558,11 @@ footer {
   footer #content {
     display: flex;
     max-width: 66%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    justify-content: space-around; }
     footer #content .players {
       display: flex; }
       footer #content .players a {
-        width: 90px;
         margin-bottom: 20px; }
     footer #content .info {
       display: flex;
@@ -856,17 +876,16 @@ footer {
   font-weight: 400;
   color: #797979; }
 
-#about .triplets {
-  display: flex;
+.triplets {
   width: 100%;
   justify-content: center;
   margin-top: 50px; }
-  #about .triplets section {
-    width: 25%;
-    margin: 0 20px;
+  .triplets section {
     text-align: left; }
-    #about .triplets section svg {
+    .triplets section svg {
       width: 120px; }
-    #about .triplets section p {
+      .triplets section svg path, .triplets section svg polygon {
+        fill: #282930 !important; }
+    .triplets section p {
       font-size: 15px;
       text-align: left; }
