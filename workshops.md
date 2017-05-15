@@ -30,14 +30,10 @@ participants:
   - Barrett Hammill
   - Margit Farhat
   - Sulema Berkey
-fourth-title: Downloads
+fourth-title: Documents
 downloads:
-  - text: All the toolkit assets (.zip)
-    href: ../assets/downloads/assets.zip
   - text: Presentation slides
-    href: http://google.com
-  - text: Mentoring guidelines
-    href: http://amazon.com
+    href: https://docs.google.com/presentation/d/1Vz665XLOB4j11pSdd9Fi9Tl9SdQ7KBiIdt0SWJq1gGA/edit?usp=sharing
 ---
 
 ## The DSI experimental training programme
