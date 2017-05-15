@@ -4,7 +4,7 @@ permalink: /about/
 title:  About
 <<<<<<< HEAD
 title1:  About
-subtitle1: Across Europe there is a growing movement of people developing inspiring digital solutions to social challenges. We call this digital social innovation (DSI). These digital solutions have developed thanks to big advances in technology, such as the open source and open data movements, low-cost open hardware, crowdsourcing and Internet of Things (IoT). By empowering citizens and engaging them in civic action, they provide new ways of building social movements, delivering public services and creating social impact in fields as diverse as healthcare, education, democracy, environment, transport and housing.
+subtitle1: Across Europe there is a growing movement of people developing inspiring digital solutions to social challenges.
 image2: ../assets/open.svg
 title2: Open source
 subtitle2: Toolkit code and assets
