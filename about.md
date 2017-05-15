@@ -4,7 +4,7 @@ permalink: /about/
 title:  About
 <<<<<<< HEAD
 title1:  About
-subtitle1: Across Europe there is a growing movement of people developing inspiring digital solutions to social challenges.s
+subtitle1: Across Europe there is a growing movement of people developing inspiring digital solutions to social challenges.
 image2: ../assets/open.svg
 title2: Open source
 subtitle2: Toolkit code and assets
@@ -17,7 +17,7 @@ subtitle4: Toolkit code and assets
 =======
 sections:
   - title: About
-    text: The Digital Social Innovation for Europe (DSI4EU) project aimed to this growing network of projects providing a bottom-up approach to tech development.     
+    text: Across Europe there is a growing movement of people developing inspiring digital solutions to social challenges.     
   - title: Open source
     text: Toolkit code and assets
     image: ../assets/open.svg
