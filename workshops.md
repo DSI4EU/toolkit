@@ -40,18 +40,22 @@ downloads:
     href: http://amazon.com
 ---
 
-## The DSI experimental training programmes
+## The DSI experimental training programme
 
-Open Making for Social Impact is the third workshop of the training programs series promoted by DSI4EU. The workshop is dedicated to digital social innovation in the context of the maker movement and open hardware and design community. The workshop takes place at UNDERBROEN a laboratory of local and urban production and it will be led by Zoe Romano (WeMake) and Serena Cangiano (Maind SUPSI) with the participation of Simona Maschi (CIID) and Christian Villum (Danish Design Center).
+Starting in April 2016, DSI4EU organised an experimental training programme to engage one of the target audiences of DSI4EU (i.e. makers and members of the open hardware and design community) in key DSI events and places across Europe.
 
 ![workshop](../assets/pics/workshop.jpg)
 
-Starting in April 2016, we organised a series of experimental training programmes to engage one of the target audiences of DSI4EU (i.e. makers and members of the open hardware and design community) in key DSI events and places across Europe. The training programmes have been delivered in the format of workshops, lectures and online meetups.  The training programmes involved two different target groups:
-Representatives of communities, associations and organisations that actively work or collaborate on DSI projects in Europe;
-Individuals who are developing technologies within the so-called Maker Movement 
+ The training programme has been delivered in the format of workshops, lectures and online meetups.  The training programme involved two different target groups:
+
+- Representatives of communities, associations and organisations that actively work or collaborate on DSI projects in Europe;
+
+
+- Individuals who are developing technologies within the so-called Maker Movement 
 
 While the first target group includes people with knowledge of the development of projects for the societal good, the latter can be considered as a key player in the field of DSI, because of its interest and expertise in the development of bottom-up technologies for tackling social challenges through open hardware and open design approaches.
-Two main tools have been designed to guide the training programmes and to facilitate mentoring activities during the workshop sessions: the DSI Scale and the Peer Knowledge Tool. The DSI Scale is a conceptual tool for selfassessment and assessment of DSI projects based on values such as knowledge sharing, technological openness and societal impact. The Peer Knowledge Tool is a conceptual survey that aims to capture best practices and problemsolving tactics within the field of DSI.
+
+Two main tools have been designed to guide the training programme and to facilitate mentoring activities during the workshop sessions: the DSI Scale and the Peer Knowledge Tool. The DSI Scale is a conceptual tool for selfassessment and assessment of DSI projects based on values such as knowledge sharing, technological openness and societal impact. The Peer Knowledge Tool is a conceptual survey that aims to capture best practices and problemsolving tactics within the field of DSI.
 
 The tools intend to support participants in discussing and exploring strategies to scale their endeavours by stimulating a collaborative reflection by:
 sharing best practices, namely problem-solving tactics applied during the development of a project;
