@@ -632,44 +632,44 @@ footer {
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-size: 48px;
+    font-size: 38.4px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     text-align: center; }
   .overlay ul {
     list-style: none;
     padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 100%; }
     .overlay ul li {
       display: block;
-      height: 25%;
-      height: calc(100% / 4);
+      height: 80px;
       min-height: 50px;
       position: relative;
       opacity: 0; }
       .overlay ul li a {
         display: block;
-        position: relative;
-        color: #F3F3F3;
-        text-decoration: none;
-        overflow: hidden; }
-        .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
-          width: 100%; }
-        .overlay ul li a:after {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          width: 0%;
-          -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-          height: 3px;
-          background: #F3F3F3;
-          -webkit-transition: 0.35s;
-          transition: 0.35s; }
+        position: relative; }
+        .overlay ul li a span {
+          color: #F3F3F3;
+          text-decoration: none;
+          overflow: hidden; }
+          .overlay ul li a span:hover:after, .overlay ul li a span:focus:after, .overlay ul li a span:active:after {
+            width: 200px; }
+          .overlay ul li a span:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            height: 3px;
+            background: #F3F3F3;
+            -webkit-transition: 0.35s;
+            transition: 0.35s; }
 
 @-webkit-keyframes fadeInRight {
   0% {
