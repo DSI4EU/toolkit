@@ -4,7 +4,7 @@ permalink: /about/
 title:  About
 <<<<<<< HEAD
 title1:  About
-subtitle1: Across Europe there is a growing movement of people developing inspiring digital solutions to social challenges.
+subtitle1: Across Europe there is a growing movement of people developing inspiring digital solutions to social challenges.s
 image2: ../assets/open.svg
 title2: Open source
 subtitle2: Toolkit code and assets
