@@ -7,7 +7,7 @@
   height: 0%
   opacity: 0
   visibility: hidden
-  z-index: 1 
+  z-index: 1
   -webkit-transition: opacity .35s, visibility .35s, height .35s
   transition: opacity .35s, visibility .35s, height .35s
   overflow: hidden
@@ -35,44 +35,44 @@
     top: 50%
     -webkit-transform: translateY(-50%)
     transform: translateY(-50%)
-    font-size: $h1-size
+    font-size: $h1-size*0.8
     font-family: $open-sans
     font-weight: $regular-weight
     text-align: center
   ul
     list-style: none
     padding: 0
-    margin: 0 auto
-    display: inline-block
-    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-around
     height: 100%
     li
       display: block
-      height: 25%
-      height: calc(100% / 4)
+      height: 80px
       min-height: 50px
       position: relative
       opacity: 0
       a
         display: block
         position: relative
-        color: $light-gray
-        text-decoration: none
-        overflow: hidden
-        &:hover:after, &:focus:after, &:active:after
-          width: 100%
-        &:after
-          content: ''
-          position: absolute
-          bottom: 0
-          left: 50%
-          width: 0%
-          -webkit-transform: translateX(-50%)
-          transform: translateX(-50%)
-          height: 3px
-          background: $light-gray
-          -webkit-transition: .35s
-          transition: .35s
+        span
+          color: $light-gray
+          text-decoration: none
+          overflow: hidden
+          &:hover:after, &:focus:after, &:active:after
+            width: 200px
+          &:after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 50%
+            width: 0%
+            -webkit-transform: translateX(-50%)
+            transform: translateX(-50%)
+            height: 3px
+            background: $light-gray
+            -webkit-transition: .35s
+            transition: .35s
 
 @-webkit-keyframes fadeInRight
   0%

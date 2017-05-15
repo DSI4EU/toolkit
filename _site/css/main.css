@@ -2,6 +2,13 @@
   #all {
     width: 91%; }
 
+  .triplets {
+    display: block; }
+
+  .triplets section {
+    width: 100%;
+    margin-bottom: 50px; }
+
   footer #content {
     width: 91%;
     flex-direction: column;
@@ -15,6 +22,9 @@
     justify-content: space-between;
     align-items: center;
     height: 100px; }
+
+  .players a {
+    width: 70px; }
 
   header {
     padding: 23px 0 28px 0; }
@@ -82,6 +92,13 @@
   #all {
     width: 93%; }
 
+  .triplets {
+    display: flex; }
+
+  .triplets section {
+    width: 25%;
+    margin: 0 20px; }
+
   footer #content {
     width: 66%; }
 
@@ -92,6 +109,9 @@
     flex-direction: column;
     align-items: center;
     height: 200px; }
+
+  .players a {
+    width: 90px; }
 
   header {
     padding: 50px 0 55px 0; }
@@ -538,11 +558,11 @@ footer {
   footer #content {
     display: flex;
     max-width: 66%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    justify-content: space-around; }
     footer #content .players {
       display: flex; }
       footer #content .players a {
-        width: 90px;
         margin-bottom: 20px; }
     footer #content .info {
       display: flex;
@@ -612,44 +632,44 @@ footer {
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-size: 48px;
+    font-size: 38.4px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     text-align: center; }
   .overlay ul {
     list-style: none;
     padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 100%; }
     .overlay ul li {
       display: block;
-      height: 25%;
-      height: calc(100% / 4);
+      height: 80px;
       min-height: 50px;
       position: relative;
       opacity: 0; }
       .overlay ul li a {
         display: block;
-        position: relative;
-        color: #F3F3F3;
-        text-decoration: none;
-        overflow: hidden; }
-        .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
-          width: 100%; }
-        .overlay ul li a:after {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          width: 0%;
-          -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-          height: 3px;
-          background: #F3F3F3;
-          -webkit-transition: 0.35s;
-          transition: 0.35s; }
+        position: relative; }
+        .overlay ul li a span {
+          color: #F3F3F3;
+          text-decoration: none;
+          overflow: hidden; }
+          .overlay ul li a span:hover:after, .overlay ul li a span:focus:after, .overlay ul li a span:active:after {
+            width: 200px; }
+          .overlay ul li a span:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            height: 3px;
+            background: #F3F3F3;
+            -webkit-transition: 0.35s;
+            transition: 0.35s; }
 
 @-webkit-keyframes fadeInRight {
   0% {
@@ -856,17 +876,16 @@ footer {
   font-weight: 400;
   color: #797979; }
 
-#about .triplets {
-  display: flex;
+.triplets {
   width: 100%;
   justify-content: center;
   margin-top: 50px; }
-  #about .triplets section {
-    width: 25%;
-    margin: 0 20px;
+  .triplets section {
     text-align: left; }
-    #about .triplets section svg {
+    .triplets section svg {
       width: 120px; }
-    #about .triplets section p {
+      .triplets section svg path, .triplets section svg polygon {
+        fill: #282930 !important; }
+    .triplets section p {
       font-size: 15px;
       text-align: left; }

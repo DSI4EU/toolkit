@@ -209,21 +209,19 @@
   font-weight: $regular-weight
   color: $dark-gray
 
-#about
-  .triplets
-    display: flex
-    width: 100%
-    justify-content: center
-    margin-top: 50px
+.triplets
+  width: 100%
+  justify-content: center
+  margin-top: 50px
 
-    section
-      width: 25%
-      margin: 0 20px
+  section    
+    text-align: left
+
+    svg
+      width: 120px
+      path, polygon
+        fill: $dark-blue !important
+
+    p
+      font-size: $small-size
       text-align: left
-
-      svg
-        width: 120px
-
-      p
-        font-size: $small-size
-        text-align: left

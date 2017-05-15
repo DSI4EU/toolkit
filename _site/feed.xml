@@ -3,11 +3,11 @@
   <channel>
     <title>Digital Social Innovation Toolkit</title>
     <description>The DSI Toolkit is a collaboratively developed toolkit that helps projects to scale in a sustainable way, generating a better impact.</description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 May 2017 18:42:10 +0200</pubDate>
-    <lastBuildDate>Mon, 15 May 2017 18:42:10 +0200</lastBuildDate>
-    <generator>Jekyll v3.2.1</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 15 May 2017 22:55:13 +0100</pubDate>
+    <lastBuildDate>Mon, 15 May 2017 22:55:13 +0100</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
     
   </channel>
 </rss>

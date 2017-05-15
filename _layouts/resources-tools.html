@@ -16,13 +16,17 @@ layout: default
 <div class="scale-content workshops-info">
   <h2> {{ page.second-title }} </h2>
   <div class="downloads">
-    <p class="bold" style="margin-top: 0 !important;">{{ page.section-one }}</p>
-    {% for link in page.section-one-links %}
-      <a href="{{ link.href }}" target="_blank"><span>{{ link.text }}</span></a>
-    {% endfor %}
-    <p class="bold">{{ page.section-two }}</p>
-    {% for link in page.section-two-links %}
-      <a href="{{ link.href }}" target="_blank"><span>{{ link.text }}</span></a>
+    {% for section in page.sections %}
+      <!-- title -->
+      {% if forloop.first == true %}
+        <p class="bold" style="margin-top: 0 !important;">{{ section.title }}</p>
+      {% else %}
+        <p class="bold">{{ section.title }}</p>
+      {% endif %}
+      <!-- links -->
+      {% for link in section.links %}
+        <a href="{{ link.href }}" target="_blank"><span>{{ link.text }}</span></a>
+      {% endfor %}
     {% endfor %}
   </div>
 </div>
