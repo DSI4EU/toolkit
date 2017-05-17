@@ -45,9 +45,7 @@ Starting in April 2016, DSI4EU organised an experimental training programme to e
  The training programme has been delivered in the format of workshops, lectures and online meetups.  The training programme involved two different target groups:
 
 - Representatives of communities, associations and organisations that actively work or collaborate on DSI projects in Europe;
-
-
-- Individuals who are developing technologies within the so-called Maker Movement 
+- Individuals who are developing technologies within the so-called Maker Movement
 
 While the first target group includes people with knowledge of the development of projects for the societal good, the latter can be considered as a key player in the field of DSI, because of its interest and expertise in the development of bottom-up technologies for tackling social challenges through open hardware and open design approaches.
 
@@ -60,4 +58,3 @@ sharing best practices, namely problem-solving tactics applied during the develo
 sharing scalability strategies, namely actions for improving aspects of a project to reach a better impact.
 
 ![workshop](../assets/pics/Copenhagen.jpg)
-

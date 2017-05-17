@@ -123,7 +123,7 @@
 
   .blog .openness {
     width: 66%; }
-  .blog > h2, .blog > h3, .blog > p {
+  .blog > h2, .blog > h3, .blog > p, .blog > ul {
     width: 66%;
     margin: 0 auto; }
   .blog h3 {
@@ -235,7 +235,7 @@ p {
 span a {
   border-bottom: 2px solid; }
 
-ol {
+ol, ul {
   padding-left: 1em;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
@@ -803,7 +803,7 @@ footer {
 .blog h3 {
   color: #282930;
   margin-top: 50px; }
-.blog p {
+.blog p, .blog ul {
   margin: 15px auto;
   line-height: 31px;
   color: #797979; }
