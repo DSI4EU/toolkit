@@ -28,6 +28,7 @@ layout: default
     {% for link in page.downloads %}
       {% if forloop.first == true %}
           <a href="{{ link.href }}"><span>{{ link.text }}</span></a>
+          <p></p>
       {% else %}
           <a href="{{ link.href }}" target="_blank"><span>{{ link.text }}</span></a>
       {% endif %}
