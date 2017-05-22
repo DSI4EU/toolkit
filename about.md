@@ -4,7 +4,7 @@ permalink: /about/
 title:  About
 sections:
   - title: About
-    text: Across Europe there is a growing movement of people developing inspiring digital solutions to social challenges.     
+    text: Across Europe there is a growing movement of people developing inspiring digital solutions to social challenges. Across Europe there is a growing movement of people developing inspiring digital solutions to social challenges. Across Europe there is a growing movement of people developing inspiring digital solutions to social challenges. Across Europe there is a growing movement of people developing inspiring digital solutions to social challenges.     
   - title: Open source
     text: Toolkit code and assets
     image: ../assets/open.svg

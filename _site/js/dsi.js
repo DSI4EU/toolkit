@@ -248,7 +248,7 @@ $("#knowledge-send").click(function(){
   if(knowledge !== "") {
     $(this).hide()
     $("#knowledge-spinner").show()
-    postIssue("Knowledge", knowledge, ["knowledge"], function() {window.location.href = "/thanks/"})
+    postIssue("Knowledge", knowledge, ["knowledge"], function() {window.location.href = "/toolkit/thanks/"})
   } else {
     alert("fill at least one field before sending!")
   }
