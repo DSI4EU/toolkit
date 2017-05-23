@@ -8,7 +8,7 @@ questions:
 - text: 1. What’s your project about?
   placeholder: I make solar panels
 - text: 2. Something went or is going well in your project.
-  description: For sure you are doing it right and positive external factors are also influencing the process... tell everyone what part of your project is working good.
+  description: For sure you are doing it right and positive external factors are also influencing the process... tell everyone what part of your project is working well.
   placeholder: My community is very involved
 - text: 3. Problem solving tactics are fundamental to scale.
   description: A lot of projects face problems in their path towards the sustainability. You'd likely experienced problems during implementation. How did you solve them? 
