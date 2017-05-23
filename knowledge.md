@@ -19,4 +19,10 @@ quotes:
   - text: We do not sell the hardware, we are providing the knowledge to run the experiments that people can make with Open Drop.
     name:  Urs Gaudenz
     epithet: Open Drop
+  - text: I can rely on the support of OpenTechSchool which is a no profit foundation. Connecting with a foundation helped me to run the project without the need of scaling as a big organization.
+    name:  Rachel Uwa 
+    epithet: School of MAA
+  - text: We do not sell the hardware, we are providing the knowledge to run the experiments that people can make with Open Drop.
+    name:  Urs Gaudenz
+    epithet: Open Drop
 ---

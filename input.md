@@ -11,7 +11,7 @@ questions:
   description: For sure you are doing it right and positive external factors are also influencing the process... tell everyone what part of your project is working well.
   placeholder: My community is very involved
 - text: 3. Problem solving tactics are fundamental to scale.
-  description: A lot of projects face problems in their path towards the sustainability. You'd likely experienced problems during implementation. How did you solve them? 
+  description: Problem-solving tactics are fundamental in order to scale. A lot of projects face problems in their path towards sustainability. You’ve likely experienced problems during implementation: how did you solve them? 
   placeholder: The roles were starting to overlap so we split in horizontal specialized groups
 - text: 4. Share a representative picture of your project.
   description: Put the link here and use CC BY-NC-SA license.
