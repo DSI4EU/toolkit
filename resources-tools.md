@@ -16,6 +16,10 @@ sections:
     links:
     - text: Restart project wiki
       href: http://www.therestartproject.org/wiki/Main_Page
+  - title: Another section
+    links:
+    - text: Restart project wiki
+      href: http://www.therestartproject.org/wiki/Main_Page
 
 ---
 

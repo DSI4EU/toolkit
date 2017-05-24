@@ -237,7 +237,6 @@ span a {
 
 ol, ul {
   padding-left: 1em;
-  font-size: 18px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400; }
 
@@ -806,7 +805,8 @@ footer {
 .blog p, .blog ul {
   margin: 15px auto;
   line-height: 31px;
-  color: #797979; }
+  color: #797979;
+  font-size: 18px; }
 .blog p img {
   margin: 50px 0; }
 .blog .openness {

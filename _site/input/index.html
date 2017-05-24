@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png">
+  <title>Share your knowledge.</title>
+  <meta name="description" content="The DSI Toolkit is a collaboratively developed toolkit that helps projects to scale in a sustainable way, generating a better impact.">
 
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/input/">
+</head>
+
+  <body>
+    <div id="all">
+      <header>
+  <a href="">
+    <img id="dark-logo" class="svg" src="/assets/darkLogo.svg" alt="dark-logo">
+  </a>
+  <div class="hamburger-menu" id="toggle">
+    <span class="dark top"></span>
+    <span class="dark middle"></span>
+    <span class="dark bottom"></span>
+  </div>
+</header>
+
+<div class="overlay" id="overlay">
+  <nav class="overlay-menu">
+    <ul>
+      <li ><a href="/about"><span>About</span></a></li>
+      <li><a href="/scale"><span>DSI Scale</span></a></li>
+      <li><a href="/knowledge"><span>Peer Knowledge</span></a></li>
+      <li><a href="/case-studies"><span>Case studies</span></a></li>
+      <li><a href="/resources-tools"><span>Resources</span></a></li>
+      <li><a href="/workshops"><span>Workshops</span></a></li>
+    </ul>
+  </nav>
+</div>
+
+      <div class="page-content">
+        <div class="hero">
+  <h1 class="post-title dark-color">Share your knowledge.</h1>
+  <p class="subtitle subhero">You learned some lessons while implementing your digital social innovation project. This is the space where you can share your knowledge and access the experiences of other innovators like you. Why? Because we can learn together how to reach a better impact.</p>
+</div>
+
+<div class="left-line-divider"></div>
+
+<div class="questions">
+  
+    <div class="question active">
+      <h2 class="dark-color">1. What’s your project about?</h2>
+      
+      <textarea onkeyup="auto_grow(this)" class="subtitle" type="text" placeholder="I make solar panels"></textarea>
+    </div>
+  
+    <div class="question ">
+      <h2 class="dark-color">2. Something went or is going well in your project.</h2>
+      
+        <p class="long description">For sure you are doing it right and positive external factors are also influencing the process... tell everyone what part of your project is working well.</p>
+      
+      <textarea onkeyup="auto_grow(this)" class="subtitle" type="text" placeholder="My community is very involved"></textarea>
+    </div>
+  
+    <div class="question ">
+      <h2 class="dark-color">3. You are releasing a good piece of software.</h2>
+      
+        <p class="long description">You are creating job opportunities, demonstrating an alternative business model. You are scaling and you are not aware of that.</p>
+      
+      <textarea onkeyup="auto_grow(this)" class="subtitle" type="text" placeholder="Your project (or part of your project) could have a better impact if…"></textarea>
+    </div>
+  
+    <div class="question ">
+      <h2 class="dark-color">4. Problem solving tactics are fundamental to scale.</h2>
+      
+        <p class="long description">Problem-solving tactics are fundamental in order to scale. A lot of projects face problems in their path towards sustainability. You’ve likely experienced problems during implementation&#058; how did you solve them?</p>
+      
+      <textarea onkeyup="auto_grow(this)" class="subtitle" type="text" placeholder="The roles were starting to overlap so we split in horizontal specialized groups"></textarea>
+    </div>
+  
+    <div class="question ">
+      <h2 class="dark-color">5. Share a representative picture of your project.</h2>
+      
+        <p class="long description">Put the link here and use CC BY-NC-SA license.</p>
+      
+      <textarea onkeyup="auto_grow(this)" class="subtitle" type="text" placeholder="http://image.com/img.jpg"></textarea>
+    </div>
+  
+</div>
+
+<button id="knowledge-send" class="block">Send →</button>
+<div class="spinner" id="knowledge-spinner">
+  <div class="rect1"></div>
+  <div class="rect2"></div>
+  <div class="rect3"></div>
+  <div class="rect4"></div>
+  <div class="rect5"></div>
+</div>
+
+        <!-- dirty fix because buttons get wrapped in a <p> -->
+        
+      </div>
+    </div>
+    <footer>
+    <div id="footer-wave"></div>
+    <div id="content">
+        <div class="info">
+            <div class="sides">
+                <a class="loghino" id="euro" href="http://europa.eu" target="blank">
+                  <img class="svg" src="/assets/euro.svg" alt="european flag">
+                </a>
+                <span>
+                    DSI4EU is funded by the European Union
+                </span>
+            </div>
+            <div class="sides">
+                <a class="loghino" id="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="blank">
+                  <img class="svg" src="/assets/license.svg" alt="license">
+                </a>
+                <span>All our work is licensed under a 
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="blank">CC BY NC SA 4.0 International License</a>, unless it says otherwise.
+                </span>
+            </div>
+        </div>
+        <div class="players">
+            <a id="nesta" href="http://www.nesta.org.uk/" target="blank">
+              <img class="svg" src="/assets/nesta.svg" alt="european flag">
+            </a>
+            <a id="waag" href="http://waag.org/en" target="blank">
+              <img class="svg" src="/assets/waag.svg" alt="european flag">
+            </a>
+            <a id="supsi" href="http://www.supsi.ch" target="blank">
+              <img class="svg" src="/assets/supsi.svg" alt="european flag">
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.rawgit.com/ironwallaby/delaunay/master/delaunay.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="/js/pace.min.js"></script>
+<script src="/js/dsi.js" type="text/javascript"></script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80135041-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
