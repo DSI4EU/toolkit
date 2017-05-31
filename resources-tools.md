@@ -16,10 +16,41 @@ sections:
     links:
     - text: Restart project wiki
       href: http://www.therestartproject.org/wiki/Main_Page
-  - title: Another section
+  - title: Design principles
     links:
-    - text: Restart project wiki
-      href: http://www.therestartproject.org/wiki/Main_Page
+    - text: Ethical design guide
+      href: http://www.ind.ie/ethical-design
+  - title: Collaborative decision-making
+    links:
+    - text: Loomio group Action for SDG Civil Society Platform 
+      href: http://www.loomio.org/g/uJd5wTXQ/action-for-sustainable-development-a-globalcivil-society-platform
+  - title: Inclusion and Integration
+    links:
+    - text: Loomio group Action for SDG Civil Society Platform 
+      href: http://www.microsoft.com/en-us/design/inclusive
+  - title: Co-creation
+    links:
+    - text: Waag Co-creation Toolkit 
+      href: http://www.co-creation.waag.org
+    - text: Lego Challenge Kaospilot 
+      href: http://www.kaospilot.dk
+  - title: Business modeling
+    links:
+    - text: Made with Creative Commons
+      href: http://www.madewith.cc 
+    - text: Getting Paid for Open Source Work 
+      href: http://www.opensource.guide 
+    - text: Business model generation 
+      href: http://www.strategyzer.com
+    - text: Open Source Business Models for Circular Economy Video Series
+      href: http://www.community.oscedays.org/t/tool-videoopen-source-business-models-for-circular-economyvideo-series/4625
+  - title: Project documentation
+    links:
+    - text: Github
+      href: http://www.github.com
+    - text: Gitlab 
+      href: http://www.about.gitlab.com 
+
 
 ---
 
